@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export function useStatefulFields() {
     const [values, setValues] = useState({});
 
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         setValues({
             ...values,
             [e.target.name]: e.target.value,

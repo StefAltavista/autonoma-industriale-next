@@ -2,7 +2,7 @@
 import React from "react";
 import { useStatefulFields } from "../../hooks/useStatefulFields";
 import { useAuthSubmit } from "../../hooks/useAuthSubmit";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export default function Subscribe() {
     const [values, handleChange] = useStatefulFields();
@@ -22,13 +22,13 @@ export default function Subscribe() {
                 <input
                     name="email"
                     placeholder="Email"
-                    onChange={handleChange}
+                    onChange={(e) => handleChange(e)}
                 />
                 <button onClick={handleClick}>Submit</button>
             </div>
 
             {thanks && <h2 className="seeya">See you soon</h2>}
-            <Link to={"/unsubscribe"}>
+            <Link href="/unsubscribe">
                 <p className="unsubscribe">Unsubscribe</p>
             </Link>
         </div>

@@ -1,16 +1,25 @@
-import React, { ReactNode, createContext, useReducer } from "react";
+"use client";
+import React, { createContext, useReducer } from "react";
 import globalReducer from "./reducer";
 
-const initialState = {};
-export const GlobalContext = createContext(initialState);
-const Provider = GlobalContext.Provider;
+const initialState = { userAccessToken: "" };
+type InitialStateType = {
+    userAccessToken: string;
+};
+export const GlobalContext = createContext<{
+    globalState: InitialStateType;
+    dispatch: React.Dispatch<any>;
+}>({
+    globalState: initialState,
+    dispatch: () => null,
+});
 
-export function GlobalProvider({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+export function GlobalProvider({ children }: { children: React.ReactNode }) {
     const [globalState, dispatch] = useReducer(globalReducer, initialState);
 
-    return <Provider value={{ globalState, dispatch }}>{children}</Provider>;
+    return (
+        <GlobalContext.Provider value={{ globalState, dispatch }}>
+            {children}
+        </GlobalContext.Provider>
+    );
 }
