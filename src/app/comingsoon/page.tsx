@@ -18,15 +18,20 @@ export default function ComingSoon() {
                     <Image
                         src="/images/logoAutonoma.png"
                         width={100}
-                        height={125}
+                        height={90}
                         alt="logoAutonoma"
                         onClick={enterPage}
                     />
-                    <h1>Enter</h1>
+                    <h1>E N T E R</h1>
                 </div>
             ) : null}
             <div className={enter ? "open" : "close"}>
-                <video className="video" loop ref={videoRef}>
+                <video
+                    className="video"
+                    loop
+                    ref={videoRef}
+                    webkit-playsinline="true"
+                >
                     <source
                         src="/videos/Teaser16March2024.mp4"
                         type="video/mp4"

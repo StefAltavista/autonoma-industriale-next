@@ -3,11 +3,20 @@
     height: 100vh;
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: red;
     cursor: pointer;
 }
+#comingsoon-intro h1 {
+    margin: 50px;
+    margin-left: 60px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    color: #b7201f;
+}
+
 .close {
     height: 0;
     overflow: hidden;
