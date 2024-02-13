@@ -26,12 +26,8 @@ export default function ComingSoon() {
                 </div>
             ) : null}
             <div className={enter ? "open" : "close"}>
-                <video
-                    className="video"
-                    loop
-                    ref={videoRef}
-                    webkit-playsinline="true"
-                >
+                <video className="video" loop ref={videoRef} playsInline>
+                    {" "}
                     <source
                         src="/videos/Teaser16March2024.mp4"
                         type="video/mp4"
