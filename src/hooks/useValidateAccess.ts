@@ -5,7 +5,7 @@ import { GlobalContext } from "../globalContext/context";
 
 export default function useValidateAccess() {
     const { dispatch } = useContext(GlobalContext);
-    const [access, setAccess] = useState();
+    const [access, setAccess] = useState<boolean>();
     useEffect(() => {
         axios
             .get("api/validate")

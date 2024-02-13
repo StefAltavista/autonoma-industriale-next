@@ -1,7 +1,13 @@
 "use client";
 import React from "react";
 
-export default function NewEventInputs({ handleInput, handleImage }) {
+export default function NewEventInputs({
+    handleInput,
+    handleImage,
+}: {
+    handleInput: (e: any) => void;
+    handleImage: (img: File) => void;
+}) {
     const fields = [
         "evt_name",
         "start_date",
@@ -28,11 +34,7 @@ export default function NewEventInputs({ handleInput, handleImage }) {
                 ) : (
                     <div className="eventInput" key={i}>
                         <p>{x}</p>
-                        <textarea
-                            type="text"
-                            name={x}
-                            onChange={handleInput}
-                        ></textarea>
+                        <textarea name={x} onChange={handleInput}></textarea>
                     </div>
                 );
             })}
@@ -42,17 +44,15 @@ export default function NewEventInputs({ handleInput, handleImage }) {
                 <input
                     type="file"
                     name="evt_poster"
-                    onChange={(e) => handleImage(e.target.files[0])}
+                    onChange={(e) => {
+                        if (!e.target.files) return;
+                        handleImage(e.target.files[0]);
+                    }}
                 />
             </div>
             <div className="eventInput">
                 <p>Public</p>
-                <input
-                    type="radio"
-                    name="published"
-                    value={false}
-                    onChange={handleInput}
-                />
+                <input type="radio" name="published" onChange={handleInput} />
             </div>
         </div>
     );

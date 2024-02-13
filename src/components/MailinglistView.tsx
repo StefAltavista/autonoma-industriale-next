@@ -2,16 +2,23 @@
 import React, { useState, useEffect } from "react";
 import axios from "../utils/axios";
 
-export default function Mailinglist() {
-    const [mailinglist, setMailinglist] = useState(false);
+type MailinglistResponseType = {
+    created_at: string;
+    email: string;
+    id: number;
+};
+export default function MailinglistView() {
+    const [mailinglist, setMailinglist] = useState<MailinglistResponseType[]>();
     const [otherErr, setOtherErr] = useState(false);
 
     useEffect(() => {
-        axios.post("/api/mailinglist").then((data) => {
-            if (data.success === false) {
+        axios.post("/api/mailinglist").then((response) => {
+            if (response.status != 200) {
                 setOtherErr(true);
             } else {
-                setMailinglist(data.data);
+                const data: MailinglistResponseType[] = response.data;
+                console.log("Mailinglist response:", response);
+                setMailinglist(data);
             }
         });
     }, []);

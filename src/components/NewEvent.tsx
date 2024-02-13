@@ -6,11 +6,12 @@ import axios from "../utils/axios";
 import readImage from "../utils/readImage";
 import uploadImage from "../utils/uploadImage";
 import NewEventInputs from "./NewEventInputs";
+import Image from "next/image";
 
 export default function NewEvent() {
-    const [error, setError] = useState();
-    const [poster, setPoster] = useState();
-    const [imgFile, setImgFile] = useState();
+    const [error, setError] = useState<boolean>();
+    const [poster, setPoster] = useState<ArrayBuffer | null | string>();
+    const [imgFile, setImgFile] = useState<File>();
 
     // const [poster, setPoster] = useState(
     //     "images/default_image.png"
@@ -28,23 +29,23 @@ export default function NewEvent() {
         collaborators: "",
         published: false,
     });
-    const handleInput = (e) => {
+    const handleInput = (e: any): void => {
         setEventData({ ...eventData, [e.target.name]: e.target.value });
     };
 
-    const handleImage = async (img) => {
-        let preview = await readImage(img);
+    const handleImage = async (img: File): Promise<void> => {
+        let preview: ArrayBuffer | null | string = await readImage(img);
         setPoster(preview);
         setImgFile(img);
     };
 
     const submit = async () => {
-        const imageName = await uploadImage(imgFile);
-        console.log("Image name", imageName);
-        setEventData({ ...eventData, evt_poster: imageName });
+        const evt_poster: string = await uploadImage(imgFile);
+
+        setEventData({ ...eventData, evt_poster });
 
         axios
-            .post("/api/newevent", { ...eventData, evt_poster: imageName })
+            .post("/api/newevent", { ...eventData, evt_poster })
             .then(({ data }) => {
                 if (!data.success) {
                     setError(true);
@@ -64,12 +65,19 @@ export default function NewEvent() {
             <h3>{eventData.evt_name || "New Event"}</h3>
             <div id="newEventForm">
                 <NewEventInputs
-                    handleInput={handleInput}
-                    handleImage={handleImage}
+                    handleInput={(e: any) => handleInput(e)}
+                    handleImage={(img: File) => handleImage(img)}
                 />
 
                 <div id="posterPreview">
-                    <img src={poster} />
+                    {poster && (
+                        <Image
+                            src={poster.toString()}
+                            alt="event"
+                            width={1200}
+                            height={1200}
+                        />
+                    )}
                 </div>
             </div>
 

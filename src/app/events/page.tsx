@@ -1,30 +1,37 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import axios from "../../utils/axios";
-import { AxiosResponse } from "axios";
+
 import "./events.css";
 import Image from "next/image";
 
-// import EventModal from "./EventModal";
-// import ModalView from "./ModalView";
-
 interface ResponseData {
-    data: { success: boolean; data: [] };
+    collaborators: string;
+    created_at: string;
+    end_date: string;
+    end_time: string;
+    evt_description: string;
+    evt_location: string;
+    evt_name: string;
+    evt_poster: string;
+    id: number;
+    published: boolean;
+    start_date: string;
+    start_time: string;
 }
 
 export default function Events() {
-    const [eventList, setEventlist] = useState();
-    const [eventView, setEventView] = useState(false);
+    const [eventList, setEventlist] = useState<ResponseData[]>();
+
     const default_image = "images/default_image.png";
 
     useEffect(() => {
-        axios.get<AxiosResponse>("/api/events").then((response) => {
+        axios.get("/api/events").then((response) => {
             console.log("AXIOS response", response);
-            if (response.status == 200) {
+            if (response.status != 200) {
                 console.log("AXIOS ERROR");
             } else {
-                const { data } = response;
-                data.reverse();
+                const data: ResponseData[] = response.data.reverse();
                 setEventlist(data);
             }
         });
@@ -36,7 +43,7 @@ export default function Events() {
                 ? eventList.map((x, id) => {
                       console.log("image:", x);
                       return (
-                          <div key={id}>
+                          <div key={id} id="eventPreview">
                               <Image
                                   src={`https://softwarenoise.com/public/images/${x.evt_poster}`}
                                   alt="poster"
@@ -48,11 +55,6 @@ export default function Events() {
                       );
                   })
                 : null}
-            {/* {eventView && (
-                <ModalView closeModal={() => setEventView(false)}>
-                    <EventModal event={eventView} />
-                </ModalView>
-            )} */}
         </div>
     );
 }

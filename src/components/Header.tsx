@@ -30,7 +30,7 @@ export default function Header() {
                 >
                     <p>Menu</p>
                 </div>
-                {toggleMenu && <Menu></Menu>}
+                {toggleMenu && <Menu />}
             </div>
         ) : null;
     return header;

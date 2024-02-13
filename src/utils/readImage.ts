@@ -1,4 +1,6 @@
-export default function readImage(img) {
+export default function readImage(
+    img: File
+): Promise<ArrayBuffer | null | string> {
     return new Promise((res, rej) => {
         const reader = new FileReader();
         reader.readAsDataURL(img);
@@ -10,7 +12,7 @@ export default function readImage(img) {
                 res(preview);
             };
         } catch {
-            (e) => {
+            (e: Error) => {
                 rej(e);
             };
         }

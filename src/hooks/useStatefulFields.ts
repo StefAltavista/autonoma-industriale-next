@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function useStatefulFields() {
+export const useStatefulFields = (): [{}, (e: any) => void] => {
     const [values, setValues] = useState({});
 
     const handleChange = (e: any) => {
@@ -10,4 +10,4 @@ export function useStatefulFields() {
         });
     };
     return [values, handleChange];
-}
+};

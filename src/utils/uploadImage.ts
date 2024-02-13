@@ -1,8 +1,13 @@
 import axios from "./axios";
 
-export default async function uploadImage(file) {
+export default async function uploadImage(
+    file: File | undefined
+): Promise<string> {
     console.log("upploadImage Func");
-    if (!file) new Error("no file added");
+    if (!file) {
+        new Error("no file added");
+        return "No File added";
+    }
 
     return new Promise((res, rej) => {
         let formData = new FormData();

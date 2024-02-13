@@ -2,11 +2,14 @@
 import axios from "../utils/axios";
 import { useState } from "react";
 
-export function useAuthSubmit(path, values) {
+export function useAuthSubmit(
+    path: string,
+    values: {}
+): [boolean, boolean, boolean, () => void, string] {
     const [error, setError] = useState(false);
     const [isVisib, setIsVisb] = useState(true);
     const [thanks, setThanks] = useState(false);
-    const [token, setToken] = useState();
+    const [token, setToken] = useState("");
     const handleClick = () => {
         axios
             .post(path, values)
