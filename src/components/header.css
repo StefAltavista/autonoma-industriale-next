@@ -38,3 +38,12 @@
     filter: brightness(10);
     background-color: rgba(255, 255, 255, 0);
 }
+@media only screen and (max-width: 600px) {
+    #header a img {
+        width: 100px;
+        height: 84px;
+    }
+    #header-title {
+        font-size: 15px;
+    }
+}
