@@ -30,7 +30,9 @@ export default function Header() {
                 >
                     <p>Menu</p>
                 </div>
-                {toggleMenu && <Menu />}
+                {toggleMenu && (
+                    <Menu closeMenu={() => setToggleMenu(!toggleMenu)} />
+                )}
             </div>
         ) : null;
     return header;

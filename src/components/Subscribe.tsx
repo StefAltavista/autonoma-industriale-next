@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { useStatefulFields } from "../../hooks/useStatefulFields";
-import { useAuthSubmit } from "../../hooks/useAuthSubmit";
+import { useStatefulFields } from "../hooks/useStatefulFields";
+import { useAuthSubmit } from "../hooks/useAuthSubmit";
 import Link from "next/link";
 
 export default function Subscribe() {

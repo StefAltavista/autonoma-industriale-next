@@ -20,7 +20,7 @@ export default function RootLayout({
             <body className={inter.className}>
                 <GlobalProvider>
                     <Header />
-                    {children}
+                    <div id="pagebody">{children}</div>
                 </GlobalProvider>
             </body>
         </html>

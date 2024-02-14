@@ -1,6 +1,6 @@
 #header {
     user-select: none;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     margin: 0;
     background-color: rgba(0, 0, 0);
@@ -9,10 +9,20 @@
     margin-bottom: 40px;
 }
 #toggle-menu {
-    position: absolute;
-    right: 30px;
+    margin-left: auto;
+    margin-right: 10px;
     padding-left: 5px;
     padding-right: 5px;
+    font-size: 20px;
+    align-self: baseline;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+}
+
+#toggle-menu:hover {
+    background-color: red;
+    color: rgb(255, 255, 255);
 }
 .menuOff {
     color: #b7201f;
@@ -21,11 +31,14 @@
     background-color: red;
     color: rgb(255, 255, 255);
 }
+
 #header-title {
     align-self: baseline;
     letter-spacing: 2px;
     font-family: "Josefin Sans", sans-serif;
     color: #b7201f;
+    padding: 5px;
+    border: 1px solid #b7201f;
 }
 #header a img {
     width: 150px;
@@ -38,7 +51,7 @@
     filter: brightness(10);
     background-color: rgba(255, 255, 255, 0);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     #header a img {
         width: 100px;
         height: 84px;
