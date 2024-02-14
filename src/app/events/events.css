@@ -9,7 +9,6 @@
     width: 100vw;
     margin-bottom: 30px;
     height: 75vh;
-
     display: flex;
 }
 #eventBackground {
@@ -32,7 +31,7 @@
 #event {
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 #eventInfo {
@@ -46,4 +45,15 @@
     cursor: pointer;
     height: 80%;
     width: auto;
+    margin: 20px;
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+    .eventPoster {
+        height: 50%;
+    }
+    #event {
+        flex-direction: column;
+    }
 }

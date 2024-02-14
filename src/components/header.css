@@ -17,10 +17,10 @@
     left: 0;
     margin: 0px;
     position: absolute;
-    width: 190px; /* Change this to whatever width you want. */
+    width: 190px;
     height: 100px;
     z-index: 0;
-    border-bottom: 1px solid rgb(0, 0, 0); /* This creates the border. Replace black with whatever color you want. */
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 #toggle-menu {
     margin-left: auto;
@@ -73,5 +73,8 @@
     }
     #header-title {
         font-size: 15px;
+    }
+    #shortBorder {
+        width: 140px;
     }
 }
