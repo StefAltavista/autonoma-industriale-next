@@ -7,6 +7,20 @@
     display: flex;
     padding: 20px;
     margin-bottom: 40px;
+    margin-bottom: 70px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid red;
+    z-index: -0;
+}
+#shortBorder {
+    top: 0;
+    left: 0;
+    margin: 0px;
+    position: absolute;
+    width: 190px; /* Change this to whatever width you want. */
+    height: 100px;
+    z-index: 0;
+    border-bottom: 1px solid rgb(0, 0, 0); /* This creates the border. Replace black with whatever color you want. */
 }
 #toggle-menu {
     margin-left: auto;
@@ -41,6 +55,7 @@
     border: 1px solid #b7201f;
 }
 #header a img {
+    position: relative;
     width: 150px;
     height: 125px;
     transition: 700ms;

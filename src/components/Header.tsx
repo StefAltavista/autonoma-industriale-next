@@ -14,6 +14,7 @@ export default function Header() {
     const header =
         pathname != "/comingsoon" ? (
             <div id="header">
+                <div id="shortBorder"></div>
                 <Link href="/">
                     <Image
                         src="/images/logoAutonoma.png"
@@ -22,6 +23,7 @@ export default function Header() {
                         height={125}
                     />
                 </Link>
+
                 <h1 id="header-title"> AUTONOMA INDUSTRIALE</h1>
                 <div
                     onClick={() => setToggleMenu(!toggleMenu)}

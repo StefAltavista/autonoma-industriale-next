@@ -44,13 +44,38 @@ export default function Events() {
                       console.log("image:", x);
                       return (
                           <div key={id} id="eventPreview">
-                              <Image
-                                  src={`https://softwarenoise.com/public/images/${x.evt_poster}`}
-                                  alt="poster"
-                                  width={1000}
-                                  height={1000}
-                              />
-                              <h3>{x.evt_name}</h3>
+                              <div id="eventBackground">
+                                  <Image
+                                      src={`https://softwarenoise.com/public/images/${x.evt_poster}`}
+                                      alt="event poster"
+                                      width={1000}
+                                      height={1000}
+                                      className="eventBackgroundImage"
+                                  />
+                              </div>
+                              <div id="event">
+                                  <Image
+                                      src={`https://softwarenoise.com/public/images/${x.evt_poster}`}
+                                      alt="event poster"
+                                      width={1000}
+                                      height={1000}
+                                      className="eventPoster"
+                                  />
+                                  <div id="eventInfo">
+                                      <h3>
+                                          <span>{x.evt_name}</span>
+                                      </h3>
+                                      <p>
+                                          <span>{x.start_date}</span>
+                                      </p>
+                                      <p>
+                                          <span>{x.evt_location}</span>
+                                      </p>
+                                      <p>
+                                          <span>{x.evt_description}</span>
+                                      </p>
+                                  </div>
+                              </div>
                           </div>
                       );
                   })
