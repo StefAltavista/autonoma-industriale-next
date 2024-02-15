@@ -31,7 +31,7 @@ export default function ComingSoon() {
                     loop
                     ref={videoRef}
                     playsInline
-                    preload="true"
+                    preload="auto"
                 >
                     <source
                         src="/videos/Teaser16March2024.mp4"
