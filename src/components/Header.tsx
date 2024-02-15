@@ -30,7 +30,7 @@ export default function Header() {
                     id="toggle-menu"
                     className={toggleMenu ? "menuOn" : "menuOff"}
                 >
-                    <p>Menu</p>
+                    {pathname != "/" && <p>Menu</p>}
                 </div>
                 {toggleMenu && (
                     <Menu closeMenu={() => setToggleMenu(!toggleMenu)} />

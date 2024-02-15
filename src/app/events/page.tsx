@@ -1,47 +1,46 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import axios from "../../utils/axios";
+import React, { useEffect, useState, useContext } from "react";
+import { GlobalContext, EventsDataType } from "@/globalContext/context";
+
+import UseFetchEvents from "@/hooks/useFetchEvents";
 
 import "./events.css";
 import Image from "next/image";
-
-interface ResponseData {
-    collaborators: string;
-    created_at: string;
-    end_date: string;
-    end_time: string;
-    evt_description: string;
-    evt_location: string;
-    evt_name: string;
-    evt_poster: string;
-    id: number;
-    published: boolean;
-    start_date: string;
-    start_time: string;
-}
+import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export default function Events() {
-    const [eventList, setEventlist] = useState<ResponseData[]>();
+    const [eventList, setEventlist] = useState<EventsDataType[]>();
+    const { dispatch, globalState } = useContext(GlobalContext);
 
-    const default_image = "images/default_image.png";
+    // const default_image = "images/default_image.png";
 
     useEffect(() => {
-        axios.get("/api/events").then((response) => {
-            console.log("AXIOS response", response);
-            if (response.status != 200) {
-                console.log("AXIOS ERROR");
-            } else {
-                const data: ResponseData[] = response.data.reverse();
-                setEventlist(data);
-            }
-        });
+        if (!globalState.events[0]) {
+            console.log("fetching events");
+            UseFetchEvents().then(
+                ({
+                    error,
+                    data,
+                }: {
+                    error: string | null;
+                    data: EventsDataType[] | null;
+                }) => {
+                    if (error) {
+                        console.log("deal with it");
+                    } else if (data) {
+                        dispatch({ type: "FETCH_EVENTS", payload: data });
+                        setEventlist(data);
+                    }
+                }
+            );
+        } else setEventlist([...globalState.events]);
     }, []);
 
     return (
         <div id="events">
             {eventList
                 ? eventList.map((x, id) => {
-                      console.log("image:", x);
                       return (
                           <div key={id} id="eventPreview">
                               <div id="eventBackground">
@@ -54,13 +53,19 @@ export default function Events() {
                                   />
                               </div>
                               <div id="event">
-                                  <Image
-                                      src={`https://softwarenoise.com/public/images/${x.evt_poster}`}
-                                      alt="event poster"
-                                      width={1000}
-                                      height={1000}
+                                  <Link
+                                      href={`/events/${x.start_date}`}
                                       className="eventPoster"
-                                  />
+                                  >
+                                      <Image
+                                          src={`https://softwarenoise.com/public/images/${x.evt_poster}`}
+                                          alt="event poster"
+                                          width={1000}
+                                          height={1000}
+                                          className="eventPoster"
+                                      />
+                                  </Link>
+
                                   <div id="eventInfo">
                                       <h3>
                                           <span>{x.evt_name}</span>

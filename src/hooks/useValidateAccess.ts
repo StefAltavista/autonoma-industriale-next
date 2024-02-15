@@ -11,7 +11,6 @@ export default function useValidateAccess() {
             .get("api/validate")
             .then(({ data }) => {
                 if (data.token) {
-                    console.log("ACCESS", data);
                     data.token
                         ? dispatch({ type: "LOG_IN", payload: data.token })
                         : null;

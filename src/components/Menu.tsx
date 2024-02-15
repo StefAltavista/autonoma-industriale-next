@@ -7,8 +7,8 @@ export default function Menu({ closeMenu }: { closeMenu: () => void }) {
             <Link href="/events">
                 <div onClick={closeMenu}>Events</div>
             </Link>
-            <Link href="/music">
-                <div onClick={closeMenu}>Music Label</div>
+            <Link href="/label">
+                <div onClick={closeMenu}>Label</div>
             </Link>
             <Link href="/about">
                 <div onClick={closeMenu}>About</div>

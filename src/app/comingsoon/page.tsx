@@ -41,7 +41,7 @@ export default function ComingSoon() {
                         height={2480}
                         id="transparentlayer"
                     />
-                    <h1>AUTONOMA INDUSTRIALE</h1>
+
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Sed porta ante nec elit sollicitudin, a accumsan eros
