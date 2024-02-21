@@ -1,7 +1,8 @@
 "use client";
 import "./comingsoon.css";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { Suspense, useRef, useState } from "react";
+
 export default function ComingSoon() {
     const videoRef = useRef<any>();
     const [enter, setEnter] = useState(false);
@@ -26,18 +27,20 @@ export default function ComingSoon() {
                 </div>
             ) : null}
             <div className={enter ? "open" : "close"}>
-                <video
-                    className="video"
-                    loop
-                    ref={videoRef}
-                    playsInline
-                    preload="auto"
-                >
-                    <source
-                        src="/videos/Teaser16March2024.mp4"
-                        type="video/mp4"
-                    />
-                </video>
+                <Suspense>
+                    <video
+                        className="video"
+                        loop
+                        ref={videoRef}
+                        playsInline
+                        preload="auto"
+                    >
+                        <source
+                            src="/videos/Teaser16March2024.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </Suspense>
                 <div id="comingsoon">
                     <Image
                         src="/images/comingsoon/poster_transparent.png"
@@ -47,20 +50,23 @@ export default function ComingSoon() {
                         id="transparentlayer"
                     />
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed porta ante nec elit sollicitudin, a accumsan eros
-                        condimentum. Nam in turpis rutrum, rhoncus massa sit
-                        amet, gravida augue. Aenean consectetur ligula sit amet
-                        placerat cursus. Proin tempus ut elit sit amet
-                        porttitor. Nam egestas elit mi, ut varius nunc lacinia
-                        at. Phasellus viverra maximus ligula et consectetur.
-                        Pellentesque porta et massa eu ultricies. Nam luctus
-                        metus sit amet felis porttitor, et lacinia erat
-                        facilisis. Maecenas sed bibendum est, dapibus laoreet
-                        odio. Morbi dignissim ornare feugiat. Proin dignissim
-                        purus ipsum, in pulvinar purus accumsan id.
-                    </p>
+                    <div className="comingsoonTextSection comingsoonInfo flash">
+                        <p>
+                            Saturday 16th of March 2024 from 9:00pm to 9:00am at
+                            Køpi Keller
+                        </p>
+                    </div>
+
+                    <div className="comingsoonTextSection description">
+                        <p>
+                            <strong>A</strong>mong this perpet<strong>u</strong>
+                            al en<strong>t</strong>anglement within the c
+                            <strong>o</strong>ils of distopya, A\I is pleased to
+                            offer a throbbi<strong>n</strong>g w
+                            <strong>o</strong>r<strong>m</strong>hole as an esc
+                            <strong>a</strong>pe.
+                        </p>
+                    </div>
 
                     <Image
                         src="/images/comingsoon/Hand.png"
@@ -69,29 +75,96 @@ export default function ComingSoon() {
                         height={2480}
                         className="flash"
                     />
-
-                    <p>
-                        Pellentesque nisl nisi, lacinia ac hendrerit sit amet,
-                        euismod in augue. Morbi tincidunt, risus at congue
-                        porta, nunc arcu rhoncus ligula, ut suscipit elit ipsum
-                        sit amet lorem. Ut maximus egestas nunc vitae imperdiet.
-                        Sed lectus ipsum, gravida at quam eget, fringilla
-                        lobortis massa. Duis dictum mattis nisl et malesuada.
-                        Morbi cursus tellus molestie nibh tincidunt, et
-                        consectetur quam pretium. Nam ut erat sapien. In at
-                        volutpat arcu, quis feugiat elit. Morbi dignissim velit
-                        condimentum, ullamcorper ipsum porta, vestibulum erat.
-                        Duis at risus at enim pretium vestibulum. Pellentesque
-                        elit velit, tristique efficitur maximus et, vestibulum
-                        quis mauris. Aenean congue ipsum sagittis erat dapibus,
-                        vitae tempor ex molestie. Sed eleifend maximus lobortis.
-                        Donec egestas felis a odio cursus rhoncus. Proin
-                        volutpat dolor magna, dapibus sollicitudin ex venenatis
-                        quis. Nullam vel odio tortor. Maecenas ac euismod felis.
-                        Sed porttitor suscipit ante nec suscipit. Vestibulum sed
-                        quam quis leo semper maximus. Phasellus sed faucibus
-                        nisl, consequat vestibulum dui.{" "}
-                    </p>
+                    <div className="comingsoonTextSection outsiders">
+                        <p> Artist from across europe: </p>
+                        <div className="outsider">
+                            <strong>Mouth Wound</strong>
+                            <Image
+                                src="/images/comingsoon/MouthWound.jpeg"
+                                alt="mouth wound"
+                                width={500}
+                                height={500}
+                            ></Image>
+                            <p>
+                                [DK] LIVE
+                                <br></br>
+                                <br></br>
+                                From Copenhagen, the solo project of Trine
+                                Paaschburg. Noise, textured soundscapes and
+                                repetitive heavy rhythms. Friction between two
+                                opposing forces.
+                            </p>
+                            <a href="" target="blank">
+                                LINK
+                            </a>
+                        </div>
+                        <div className="outsider">
+                            <p>
+                                <strong>Gaja</strong>
+                                <Image
+                                    src="/images/comingsoon/Gaja.jpeg"
+                                    alt="mouth wound"
+                                    width={500}
+                                    height={500}
+                                ></Image>
+                                [IT] LIVE
+                                <br></br>
+                                <br></br>
+                                Ophism Records label boss (!). Long rooted,
+                                merciless wax spinner. Already resident of
+                                Tresor Berlin. His live, at his second
+                                appearance right after OUTLINE FESTIVAL, is a
+                                brutal and distorted assault of cerebral Techno.
+                                Now based in northern Italy, this is a rare
+                                catch.
+                            </p>
+                            <a href="" target="blank">
+                                LINK
+                            </a>
+                        </div>
+                        <div className="outsider">
+                            <p>
+                                <strong>Exome</strong>
+                                <Image
+                                    src="/images/comingsoon/Exome.jpeg"
+                                    alt="mouth wound"
+                                    width={500}
+                                    height={500}
+                                ></Image>
+                                [IT] LIVE
+                                <br></br> <br></br>
+                                Existing as a necessary violence in a last
+                                resort to invoke a vehicle of change.
+                                Ritualistic in practice, a variation of
+                                melancholic & extreme brutal harsh electronics -
+                                created against life and against humanity. EXOME
+                                is the purity of hate & violence, like the rot
+                                that spills out of a murderous corpse. A
+                                beautiful and tragic stream of consciousness,
+                                dissolving and growing, quickly spreading
+                                through the infectious path of disease.
+                            </p>
+                            <a href="" target="blank">
+                                {" "}
+                                LINK
+                            </a>
+                        </div>
+                        <div className="outsider">
+                            <p>
+                                <strong>3SBAT</strong> <br></br>[UK] DJ
+                                <br></br> <br></br>
+                                Glasgow based DJ and producer, 3SBAT brings
+                                their full body techno for the first time to
+                                Autonoma Industriale. If you had the chance to
+                                meet them in OHM Berlin or at Gegen last year
+                                you know what to expect.
+                            </p>
+                            <a href="" target="blank">
+                                {" "}
+                                LINK
+                            </a>
+                        </div>
+                    </div>
                     <Image
                         src="/images/comingsoon/Header.png"
                         alt="poster"
@@ -99,37 +172,47 @@ export default function ComingSoon() {
                         height={2480}
                         className="flash"
                     />
-                    <p>
-                        Nunc efficitur massa in massa rutrum, sit amet tincidunt
-                        justo feugiat. Suspendisse lectus purus, auctor a
-                        consectetur sit amet, commodo a magna. Curabitur metus
-                        justo, porttitor id leo ullamcorper, elementum tempus
-                        nunc. Orci varius natoque penatibus et magnis dis
-                        parturient montes, nascetur ridiculus mus. Donec
-                        vehicula interdum imperdiet. Nam volutpat, libero et
-                        lobortis congue, turpis erat interdum justo, in interdum
-                        quam mauris sed lacus. In vehicula diam non turpis
-                        rhoncus molestie. Sed malesuada feugiat sem, quis auctor
-                        eros. Fusce gravida urna nisl, at suscipit nisi commodo
-                        vitae. In vitae pharetra lorem. In rutrum pretium nulla
-                        at congue. Aenean quis sollicitudin nunc. Nullam vitae
-                        malesuada lectus, sed posuere nibh. Duis pellentesque,
-                        odio quis ultrices molestie, mi lectus scelerisque enim,
-                        et imperdiet purus est at urna. Nulla sed dignissim
-                        orci. Sed massa sapien, commodo et rutrum vulputate,
-                        facilisis sit amet velit. Etiam tristique placerat
-                        blandit. Quisque vitae tellus eget ex fringilla lacinia.{" "}
-                    </p>
-                    <p>
-                        {" "}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut vitae condimentum ex, eget sagittis massa. Duis
-                        sodales vitae ipsum in consequat. Vivamus vel mi a quam
-                        faucibus ultricies sit amet eu eros. Etiam pellentesque
-                        consequat tortor eget porta. Donec laoreet ornare neque,
-                        sed fermentum ex efficitur non. Integer et nisl nec leo
-                        facilisis hendrerit.
-                    </p>
+                    <div className="comingsoonTextSection">
+                        <p>
+                            Templər [HANDS] LIVE Half of Imperial Black Unit,
+                            half of ATT CORP. With releases and appearance all
+                            over the electronic realm, templer emerges his
+                            productions in to a violent universe, a mixture of
+                            raw industrial music, noisey scapes with a tribal
+                            rhytmic atmosphere.
+                            <br></br>
+                            Phallucipher ΦΛΣΦΡ LIVE A/V The audio visual
+                            nightmare of A and K. Emerging from mixed media
+                            arts, the duo apply their sonic curiosities to one
+                            another through an internal and external dialogue as
+                            a means of realm exploration.
+                            <br></br>
+                            Sinister Sveta [Autonoma Industriale] LIVE Live
+                            tapes looping black holes. The direful alter ego of
+                            DJ Control Delete.
+                            <br></br>
+                            Hausverboti [Autonoma Industriale] DJ Your doom
+                            techno morning dose
+                            <br></br>
+                            1kPieces [Autonoma Industriale] LIVE With his last
+                            work just released on our label, we could not be
+                            more thrilled to bring in the live of 1kPieces to
+                            open the next Autonoma Industriale. Dive into an
+                            hour of drone blissness and detach from the external
+                            world. Autonoma Industriale 160324 There is hope.
+                        </p>
+                    </div>
+                    <div className="comingsoonTextSection">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut vitae condimentum ex, eget sagittis massa.
+                            Duis sodales vitae ipsum in consequat. Vivamus vel
+                            mi a quam faucibus ultricies sit amet eu eros. Etiam
+                            pellentesque consequat tortor eget porta. Donec
+                            laoreet ornare neque, sed fermentum ex efficitur
+                            non. Integer et nisl nec leo facilisis hendrerit.
+                        </p>
+                    </div>
                     <div className="comingsoon-space"></div>
                 </div>
             </div>

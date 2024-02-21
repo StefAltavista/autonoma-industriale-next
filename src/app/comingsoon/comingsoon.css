@@ -9,46 +9,13 @@
     color: red;
     cursor: pointer;
 }
+
 #comingsoon-intro h1 {
     margin: 50px;
     margin-left: 60px;
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px;
     color: #b7201f;
-}
-#comingsoon-loading {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: red;
-    cursor: pointer;
-}
-
-#comingsoon-loading {
-    animation: turn;
-    animation-duration: 2s;
-}
-
-@keyframes turn {
-    0% {
-        transform: rotateX(0deg);
-    }
-    25% {
-        transform: rotateX(90deg);
-    }
-    50% {
-        transform: rotateX(180deg);
-    }
-    75% {
-        transform: rotateX(270deg);
-    }
-    100% {
-        transform: rotateX(0deg);
-    }
 }
 
 .close {
@@ -58,6 +25,9 @@
 .open {
     height: 100%;
 }
+
+/* ----In the page---- */
+
 #comingsoon {
     width: 100vw;
     height: 100vh;
@@ -75,16 +45,57 @@
 }
 #comingsoon img {
     width: 100%;
-    /* height: 100vh; */
     object-fit: scale-down;
     z-index: 1;
 }
-#comingsoon p {
+.comingsoonTextSection {
+    width: 100vw;
     margin-bottom: 100px;
     z-index: 1;
     padding: 10%;
     background: rgba(0, 0, 0, 0.777);
 }
+.comingsoonInfo {
+    margin-top: 100px;
+
+    padding: 0;
+    background: rgba(255, 255, 255, 0.777);
+    color: black;
+}
+
+.comingsoonInfo p {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 120px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.outsiders {
+    font-size: 16px;
+    text-align: center;
+}
+.outsider img {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    background-color: #b7201f;
+}
+
+.outsider {
+    border-top: 1px solid #b7201f;
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.outsider p {
+    margin-top: 0%;
+}
+
 .flash {
     animation-name: flashing;
     animation-duration: 1s;
@@ -101,10 +112,25 @@
         filter: brightness(0%);
     }
 
-    25% {
+    15% {
         filter: brightness(10000%);
+    }
+    30% {
+        filter: brightness(50%);
+    }
+    80% {
+        filter: brightness(500000%);
     }
     100% {
         filter: brightness(50%);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .comingsoonInfo {
+        font-size: 16px;
+    }
+    .description {
+        font-size: 70px;
     }
 }
