@@ -75,24 +75,24 @@
     text-align: justify;
 }
 
-.outsiders {
+.artists {
     font-size: 16px;
     text-align: center;
 }
-.outsider img {
+.artist img {
     margin: 0;
     margin-top: 10px;
     padding: 0;
     background-color: #b7201f;
 }
 
-.outsider {
+.artist {
     border-top: 1px solid #b7201f;
     padding-top: 10px;
     margin-top: 40px;
     margin-bottom: 50px;
 }
-.outsider p {
+.artist p {
     margin-top: 0%;
 }
 
@@ -106,7 +106,19 @@
     width: 100%;
     min-height: 100vh;
 }
+.links {
+    text-align: center;
+}
+.disclaimer {
+    font-style: italic;
+}
 
+#comingsoonBottomLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* filter: brightness(99990%); */
+}
 @keyframes flashing {
     0% {
         filter: brightness(0%);

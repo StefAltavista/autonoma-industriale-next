@@ -1,6 +1,7 @@
 "use client";
 import "./comingsoon.css";
 import Image from "next/image";
+import Link from "next/link";
 import { Suspense, useRef, useState } from "react";
 
 export default function ComingSoon() {
@@ -75,9 +76,9 @@ export default function ComingSoon() {
                         height={2480}
                         className="flash"
                     />
-                    <div className="comingsoonTextSection outsiders">
-                        <p> Artist from across europe: </p>
-                        <div className="outsider">
+                    <div className="comingsoonTextSection artists">
+                        <p> Lineup </p>
+                        <div className="artist">
                             <strong>Mouth Wound</strong>
                             <Image
                                 src="/images/comingsoon/MouthWound.jpeg"
@@ -98,12 +99,12 @@ export default function ComingSoon() {
                                 LINK
                             </a>
                         </div>
-                        <div className="outsider">
+                        <div className="artist">
                             <p>
                                 <strong>Gaja</strong>
                                 <Image
                                     src="/images/comingsoon/Gaja.jpeg"
-                                    alt="mouth wound"
+                                    alt="gaja"
                                     width={500}
                                     height={500}
                                 ></Image>
@@ -122,12 +123,12 @@ export default function ComingSoon() {
                                 LINK
                             </a>
                         </div>
-                        <div className="outsider">
+                        <div className="artist">
                             <p>
                                 <strong>Exome</strong>
                                 <Image
                                     src="/images/comingsoon/Exome.jpeg"
-                                    alt="mouth wound"
+                                    alt="exome"
                                     width={500}
                                     height={500}
                                 ></Image>
@@ -145,11 +146,10 @@ export default function ComingSoon() {
                                 through the infectious path of disease.
                             </p>
                             <a href="" target="blank">
-                                {" "}
                                 LINK
                             </a>
                         </div>
-                        <div className="outsider">
+                        <div className="artist">
                             <p>
                                 <strong>3SBAT</strong> <br></br>[UK] DJ
                                 <br></br> <br></br>
@@ -160,7 +160,6 @@ export default function ComingSoon() {
                                 you know what to expect.
                             </p>
                             <a href="" target="blank">
-                                {" "}
                                 LINK
                             </a>
                         </div>
@@ -173,45 +172,98 @@ export default function ComingSoon() {
                         className="flash"
                     />
                     <div className="comingsoonTextSection">
+                        <p> Artists based in Berlin</p>
+                        <div className="artist">
+                            <strong>Templər</strong>
+                            <p>[HANDS] LIVE</p>
+                            <p>
+                                Half of Imperial Black Unit, half of ATT CORP.
+                                With releases and appearance all over the
+                                electronic realm, templer emerges his
+                                productions in to a violent universe, a mixture
+                                of raw industrial music, noisey scapes with a
+                                tribal rhytmic atmosphere.
+                            </p>
+                        </div>
+                        <div className="artist">
+                            <strong>Phallucipher ΦΛΣΦΡ</strong>
+                            <p> LIVE Audio/Visual </p>
+                            <p>
+                                The audio visual nightmare of A and K. Emerging
+                                from mixed media arts, the duo apply their sonic
+                                curiosities to one another through an internal
+                                and external dialogue as a means of realm
+                                exploration.
+                            </p>
+                        </div>
+                        <div className="artist">
+                            <strong> Sinister Sveta </strong>
+                            <p>[Autonoma Industriale] LIVE</p>
+                            <p>
+                                Live tapes looping black holes. The direful
+                                alter ego of DJ Control Delete.
+                            </p>
+                        </div>
+                        <div className="artist">
+                            <strong>Hausverboti </strong>
+                            <p>[Autonoma Industriale] DJ </p>
+                            <p>Your doom techno morning dose</p>
+                        </div>
+                        <div className="artist">
+                            <strong>1kPieces</strong>
+                            <p>[Autonoma Industriale] LIVE</p>
+                            <p>
+                                With his last work just released on our label,
+                                we could not be more thrilled to bring in the
+                                live of 1kPieces to open the next Autonoma
+                                Industriale. Dive into an hour of drone
+                                blissness and detach from the external world.
+                                Autonoma Industriale 160324 There is hope.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="comingsoonTextSection links">
                         <p>
-                            Templər [HANDS] LIVE Half of Imperial Black Unit,
-                            half of ATT CORP. With releases and appearance all
-                            over the electronic realm, templer emerges his
-                            productions in to a violent universe, a mixture of
-                            raw industrial music, noisey scapes with a tribal
-                            rhytmic atmosphere.
-                            <br></br>
-                            Phallucipher ΦΛΣΦΡ LIVE A/V The audio visual
-                            nightmare of A and K. Emerging from mixed media
-                            arts, the duo apply their sonic curiosities to one
-                            another through an internal and external dialogue as
-                            a means of realm exploration.
-                            <br></br>
-                            Sinister Sveta [Autonoma Industriale] LIVE Live
-                            tapes looping black holes. The direful alter ego of
-                            DJ Control Delete.
-                            <br></br>
-                            Hausverboti [Autonoma Industriale] DJ Your doom
-                            techno morning dose
-                            <br></br>
-                            1kPieces [Autonoma Industriale] LIVE With his last
-                            work just released on our label, we could not be
-                            more thrilled to bring in the live of 1kPieces to
-                            open the next Autonoma Industriale. Dive into an
-                            hour of drone blissness and detach from the external
-                            world. Autonoma Industriale 160324 There is hope.
+                            Join our channels for more info regarding this and
+                            other events:
+                        </p>
+                        <Link href={"/subscribe"}> Mailinglinst </Link>
+                        <br></br> <br></br>
+                        <a href="" target="blank">
+                            Telegram
+                        </a>
+                    </div>
+                    <div className="comingsoonTextSection disclaimer">
+                        <p>
+                            Autonoma Industriale aims to create a safer and more
+                            inclusive enviroment, this means that there will be
+                            no tollerance for any kind of abusive, agressive or
+                            discriminatory behaviour. <br></br>
+                            An awareness team will be present and recognisable
+                            at any time.
+                        </p>
+
+                        <p>
+                            NO RACISM - NO HOMOPHOBIA - NO SEXISM - NO ZIONISM -
+                            NO ANTISEMITISM - NO FOOLS
+                        </p>
+
+                        <p>
+                            **Part of the proceeds of this event will be donated
+                            to ELSC.support <br></br> The ELSC is the first and
+                            only organisation that specialises in providing
+                            legal support and assistance to all those facing
+                            repression for advocating for Palestine across
+                            Europe including the UK.
                         </p>
                     </div>
-                    <div className="comingsoonTextSection">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Ut vitae condimentum ex, eget sagittis massa.
-                            Duis sodales vitae ipsum in consequat. Vivamus vel
-                            mi a quam faucibus ultricies sit amet eu eros. Etiam
-                            pellentesque consequat tortor eget porta. Donec
-                            laoreet ornare neque, sed fermentum ex efficitur
-                            non. Integer et nisl nec leo facilisis hendrerit.
-                        </p>
+                    <div id="comingsoonBottomLogo">
+                        <Image
+                            src="/images/logoAutonoma.png"
+                            width={100}
+                            height={100}
+                            alt="Logo"
+                        />
                     </div>
                     <div className="comingsoon-space"></div>
                 </div>
