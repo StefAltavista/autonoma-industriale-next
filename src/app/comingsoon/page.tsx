@@ -4,11 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useRef, useState } from "react";
 import MuteButton from "@/components/MuteButton";
+import Subscribe from "@/components/Subscribe";
 
 export default function ComingSoon() {
     const videoRef = useRef<any>();
     const [enter, setEnter] = useState(false);
-    const [mute, setMute] = useState(false);
 
     const enterPage = () => {
         videoRef.current.play();
@@ -103,7 +103,10 @@ export default function ComingSoon() {
                                 repetitive heavy rhythms. Friction between two
                                 opposing forces.
                             </p>
-                            <a href="linktr.ee/mouthwound" target="blank">
+                            <a
+                                href="https://linktr.ee/mouthwound"
+                                target="blank"
+                            >
                                 LINK
                             </a>
                         </div>
@@ -195,7 +198,7 @@ export default function ComingSoon() {
                                 the team are themselves, manu_facturer &
                                 Kalopsia.
                             </p>
-                            <a href="linktr.ee/3SBAT" target="blank">
+                            <a href="https://linktr.ee/3SBAT" target="blank">
                                 LINK
                             </a>
                         </div>
@@ -260,14 +263,20 @@ export default function ComingSoon() {
                     </div>
                     <div className="comingsoonTextSection links">
                         <p>
-                            Join our channels for more info regarding this and
-                            other events:
+                            Join our mailing list for more info regarding this
+                            and other events
                         </p>
-                        <Link href={"/subscribe"}> Mailinglinst </Link>
-                        <br></br> <br></br>
-                        <a href="" target="blank">
-                            Telegram
-                        </a>
+                        <Subscribe />
+                        <p>
+                            or if you prefer, our{" "}
+                            <a
+                                href="https://t.me/autonomaindustriale"
+                                target="blank"
+                            >
+                                Telegram
+                            </a>{" "}
+                            channel
+                        </p>
                     </div>
                     <div className="comingsoonTextSection disclaimer">
                         <p>
