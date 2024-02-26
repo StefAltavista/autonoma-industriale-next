@@ -3,10 +3,12 @@ import "./comingsoon.css";
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense, useRef, useState } from "react";
+import MuteButton from "@/components/MuteButton";
 
 export default function ComingSoon() {
     const videoRef = useRef<any>();
     const [enter, setEnter] = useState(false);
+    const [mute, setMute] = useState(false);
 
     const enterPage = () => {
         videoRef.current.play();
@@ -28,6 +30,7 @@ export default function ComingSoon() {
                 </div>
             ) : null}
             <div className={enter ? "open" : "close"}>
+                <MuteButton videoRef={videoRef} visible={enter} />
                 <Suspense>
                     <video
                         className="video"
@@ -43,13 +46,16 @@ export default function ComingSoon() {
                     </video>
                 </Suspense>
                 <div id="comingsoon">
-                    <Image
-                        src="/images/comingsoon/poster_transparent.png"
-                        alt="poster"
-                        width={2480}
-                        height={2480}
-                        id="transparentlayer"
-                    />
+                    <Suspense>
+                        {" "}
+                        <Image
+                            src="/images/comingsoon/poster_transparent.png"
+                            alt="poster"
+                            width={2480}
+                            height={2480}
+                            id="transparentlayer"
+                        />
+                    </Suspense>
 
                     <div className="comingsoonTextSection comingsoonInfo flash">
                         <p>
@@ -69,13 +75,15 @@ export default function ComingSoon() {
                         </p>
                     </div>
 
-                    <Image
-                        src="/images/comingsoon/Hand.png"
-                        alt="poster"
-                        width={2480}
-                        height={2480}
-                        className="flash"
-                    />
+                    <Suspense>
+                        <Image
+                            src="/images/comingsoon/Hand.png"
+                            alt="poster"
+                            width={2480}
+                            height={2480}
+                            className="flash"
+                        />
+                    </Suspense>
                     <div className="comingsoonTextSection artists">
                         <p> Lineup </p>
                         <div className="artist">
@@ -95,7 +103,7 @@ export default function ComingSoon() {
                                 repetitive heavy rhythms. Friction between two
                                 opposing forces.
                             </p>
-                            <a href="" target="blank">
+                            <a href="linktr.ee/mouthwound" target="blank">
                                 LINK
                             </a>
                         </div>
@@ -119,7 +127,10 @@ export default function ComingSoon() {
                                 Now based in northern Italy, this is a rare
                                 catch.
                             </p>
-                            <a href="" target="blank">
+                            <a
+                                href="https://ophism.bandcamp.com/album/all-i-see-i-hate"
+                                target="blank"
+                            >
                                 LINK
                             </a>
                         </div>
@@ -145,21 +156,46 @@ export default function ComingSoon() {
                                 dissolving and growing, quickly spreading
                                 through the infectious path of disease.
                             </p>
-                            <a href="" target="blank">
+                            <a
+                                href="https://phagetapes.bandcamp.com/album/no-one-deserves-an-empty-life"
+                                target="blank"
+                            >
                                 LINK
                             </a>
                         </div>
                         <div className="artist">
                             <p>
-                                <strong>3SBAT</strong> <br></br>[UK] DJ
+                                <strong>3SBAT</strong>
+                                <Image
+                                    src="/images/comingsoon/3sbat.jpeg"
+                                    alt="exome"
+                                    width={500}
+                                    height={500}
+                                ></Image>{" "}
+                                [UK] DJ
                                 <br></br> <br></br>
-                                Glasgow based DJ and producer, 3SBAT brings
-                                their full body techno for the first time to
-                                Autonoma Industriale. If you had the chance to
-                                meet them in OHM Berlin or at Gegen last year
-                                you know what to expect.
+                                Italian born, non-binary, Glasgow based, Dj &
+                                music producer and Left Hand Path practitioner
+                                3SBAT (pronounced Esbat) will bring you in the
+                                dark realm of their Ritual Techno - a blend of
+                                dark industrial , ritual , noise and broken
+                                techno. <br></br>Playing gigs in between Glasgow
+                                and Berlin, 3SBAT has performed in clubs such as
+                                Tresor , about://blank , OHM , and Kit Kat
+                                Berlin, in events such has Gegen Berlin,
+                                SUBVERTED & VuMantra. <br></br>3SBAT has
+                                releases on the mighty Soma Records ; as well as
+                                industrial experimental labels such as Revok
+                                Records (London) , Subverted (Berlin), VuMantra
+                                (Berlin) , Experiment Records Tokyo & hard tech
+                                label Brutalism x Basseht. 3SBAT is also
+                                resident and 1/3 of the Glaswegian Collective
+                                A.D.S.R - a new space for underground techno in
+                                Glasgow held bi-monthly at La Cheetah . Part of
+                                the team are themselves, manu_facturer &
+                                Kalopsia.
                             </p>
-                            <a href="" target="blank">
+                            <a href="linktr.ee/3SBAT" target="blank">
                                 LINK
                             </a>
                         </div>

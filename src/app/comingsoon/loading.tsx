@@ -8,7 +8,7 @@ export default function Loading() {
                 height={90}
                 alt="logoAutonoma"
             />
-            <h1>E N T E R</h1>
+            <h1>LOADING...</h1>
         </div>
     );
 }
