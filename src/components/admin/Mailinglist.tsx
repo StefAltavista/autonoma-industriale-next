@@ -1,18 +1,20 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import axios from "../utils/axios";
+import axios from "../../utils/axios";
+import MailinglistView from "./MailinglistView";
+import MailinglistExportList from "@/utils/MailinglistExportList";
 
-type MailinglistResponseType = {
+export type MailinglistResponseType = {
     created_at: string;
     email: string;
     id: number;
 };
-export default function MailinglistView() {
+export default function Mailinglist() {
     const [mailinglist, setMailinglist] = useState<MailinglistResponseType[]>();
     const [otherErr, setOtherErr] = useState(false);
 
     useEffect(() => {
-        axios.post("/api/mailinglist").then((response) => {
+        axios.post("/api/mailinglist/getlist").then((response) => {
             if (response.status != 200) {
                 setOtherErr(true);
             } else {
@@ -27,22 +29,17 @@ export default function MailinglistView() {
         <div id="mailinglist">
             {otherErr && (
                 <p className="error">
-                    Fuck, something went wrong, call Luca please
+                    something went wrong retrieveing the mailinglist from the
+                    database
                 </p>
             )}
+
             {mailinglist && (
-                <div className="resultsContainer">
-                    <h3 className="mailingList">Mailing List</h3>
-                    <p className="total">[ Total: {mailinglist.length} ]</p>
-                    {mailinglist.map((email, idx) => {
-                        return (
-                            <div key={idx} className="email">
-                                <p className="email">
-                                    <strong>{email.email}</strong>
-                                </p>
-                            </div>
-                        );
-                    })}
+                <div>
+                    <div onClick={() => MailinglistExportList(mailinglist)}>
+                        Export List
+                    </div>{" "}
+                    <MailinglistView mailinglist={mailinglist} />
                 </div>
             )}
         </div>

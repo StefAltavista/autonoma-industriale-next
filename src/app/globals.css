@@ -43,6 +43,18 @@ a:hover {
     color: rgb(255, 255, 255);
 }
 
+button {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    color: rgb(255, 0, 0);
+    background-color: black;
+}
+
 #pageBody {
     margin: 20px;
     padding: 20px;

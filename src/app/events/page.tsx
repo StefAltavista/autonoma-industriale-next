@@ -1,12 +1,9 @@
 "use client";
 import React, { useEffect, useState, useContext } from "react";
 import { GlobalContext, EventsDataType } from "@/globalContext/context";
-
 import UseFetchEvents from "@/hooks/useFetchEvents";
-
 import "./events.css";
 import Image from "next/image";
-import { redirect } from "next/navigation";
 import Link from "next/link";
 
 export default function Events() {

@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import "./newEvent.css";
-import axios from "../utils/axios";
+import axios from "../../utils/axios";
 
-import readImage from "../utils/readImage";
-import uploadImage from "../utils/uploadImage";
+import readImage from "../../utils/readImage";
+import uploadImage from "../../utils/uploadImage";
 import NewEventInputs from "./NewEventInputs";
 import Image from "next/image";
 

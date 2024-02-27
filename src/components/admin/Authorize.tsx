@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useContext } from "react";
-import { useStatefulFields } from "../hooks/useStatefulFields";
-import { useAuthSubmit } from "../hooks/useAuthSubmit";
-import { GlobalContext } from "../globalContext/context";
+import { useStatefulFields } from "../../hooks/useStatefulFields";
+import { useAuthSubmit } from "../../hooks/useAuthSubmit";
+import { GlobalContext } from "../../globalContext/context";
 
 export default function Authorize() {
     const [values, handleChange] = useStatefulFields();

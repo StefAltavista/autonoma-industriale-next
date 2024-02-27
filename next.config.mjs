@@ -3,9 +3,9 @@ const nextConfig = {
     async redirects() {
         return [
             {
-                source: "/:path((?!_next|images|videos|icons|comingsoon$).*)",
+                source: "/:path((?!_next|images|videos|icons|comingsoon|admin|mailinglist/*).*)",
                 destination: "/comingsoon",
-                permanent: true,
+                permanent: false,
             },
         ];
     },

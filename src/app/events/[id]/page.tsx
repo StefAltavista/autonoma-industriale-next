@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState, useContext } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import UseFetchEvents from "@/hooks/useFetchEvents";
 import { GlobalContext, EventsDataType } from "@/globalContext/context";
+import "./eventPage.css";
 
 type eventPageParams = {
     params: { id: string };

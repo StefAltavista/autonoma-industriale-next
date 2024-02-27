@@ -1,28 +1,29 @@
-import React from "react";
-import { useStatefulFields } from "../hooks/useStatefulFields";
+"use client";
 import { useAuthSubmit } from "../hooks/useAuthSubmit";
+import { useState } from "react";
 
 export default function Unsubscribe() {
-    const [values, handleChange] = useStatefulFields();
+    const [email, setEmail] = useState("");
     const [thanks, isVisib, error, handleClick] = useAuthSubmit(
-        "api/unsubscribe",
-        values
+        "api/mailinglist/unsubscribe",
+        { email }
     );
 
     return (
         <div>
             <div className="app">
-                {isVisib && (
+                {!thanks && (
                     <div className="content">
                         {error && (
                             <p className="error">
-                                Looks like your email is not here
+                                Looks like your email is not here: {error}
                             </p>
                         )}
                         <input
                             name="mail"
                             placeholder="Email"
-                            onChange={handleChange}
+                            value={thanks ? "" : email}
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                         <button onClick={handleClick}>Unsubscribe</button>
                     </div>

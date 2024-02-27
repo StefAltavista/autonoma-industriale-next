@@ -2,17 +2,17 @@
 import React, { useContext, useState } from "react";
 
 import { GlobalContext } from "../../globalContext/context";
-import Authorize from "../../components/Authorize";
+import Authorize from "../../components/admin/Authorize";
 import useValidateAccess from "../../hooks/useValidateAccess";
 import "./admin.css";
 
 //modals
 import ModalView from "../../components/ModalView";
-import MailinglistView from "../../components/MailinglistView";
-import NewEvent from "../../components/NewEvent";
-import EditEvent from "../../components/EditEvent";
-import AddToLabel from "../../components/AddToLabel";
-import UploadToArchive from "../../components/UploadToArchive";
+import MailinglistView from "../../components/admin/Mailinglist";
+import NewEvent from "../../components/admin/NewEvent";
+import EditEvent from "../../components/admin/EditEvent";
+import AddToLabel from "../../components/admin/AddToLabel";
+import UploadToArchive from "../../components/admin/UploadToArchive";
 
 export default function Admin() {
     const [access] = useValidateAccess();

@@ -1,14 +1,12 @@
 "use client";
-import React from "react";
-import { useStatefulFields } from "../hooks/useStatefulFields";
+// import React from "react";
 import { useAuthSubmit } from "../hooks/useAuthSubmit";
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Subscribe() {
     const [email, setEmail] = useState("");
     const [thanks, isVisib, error, handleClick] = useAuthSubmit(
-        "api/subscribe",
+        "api/mailinglist/subscribe",
         { email }
     );
 
