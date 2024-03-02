@@ -1,5 +1,4 @@
 import { MailinglistResponseType } from "./Mailinglist";
-
 export default function MailinglistView({
     mailinglist,
 }: {

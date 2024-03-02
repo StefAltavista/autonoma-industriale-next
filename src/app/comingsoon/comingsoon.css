@@ -45,9 +45,11 @@
 }
 #comingsoon img {
     width: 100%;
+
     object-fit: scale-down;
     z-index: 1;
 }
+
 .comingsoonTextSection {
     width: 100vw;
     margin-bottom: 100px;

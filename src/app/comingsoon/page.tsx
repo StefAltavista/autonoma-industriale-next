@@ -11,20 +11,19 @@ export default function ComingSoon() {
     const [enter, setEnter] = useState(false);
 
     const enterPage = () => {
-        videoRef.current.play();
         setEnter(true);
+        videoRef.current.play();
     };
 
     return (
         <div>
             {!enter ? (
-                <div id="comingsoon-intro">
+                <div id="comingsoon-intro" onClick={() => enterPage()}>
                     <Image
                         src="/images/logoAutonoma.png"
                         width={100}
                         height={90}
                         alt="logoAutonoma"
-                        onClick={enterPage}
                     />
                     <h1>E N T E R</h1>
                 </div>
@@ -47,12 +46,11 @@ export default function ComingSoon() {
                 </Suspense>
                 <div id="comingsoon">
                     <Suspense>
-                        {" "}
                         <Image
                             src="/images/comingsoon/poster_transparent.png"
                             alt="poster"
-                            width={2480}
-                            height={2480}
+                            width={2400}
+                            height={2400}
                             id="transparentlayer"
                         />
                     </Suspense>

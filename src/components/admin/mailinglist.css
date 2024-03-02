@@ -1,0 +1,23 @@
+#mailinglist {
+    width: 100%;
+    display: flex;
+}
+
+.mailinglistActions {
+    background-color: rgb(99, 99, 99);
+    width: 20%;
+}
+
+#manageMailinlistBody {
+    padding-left: 20px;
+    width: 90%;
+    background-color: rgb(114, 114, 114);
+    overflow: scroll;
+}
+
+@media only screen and (max-width: 1000px) {
+    .tools {
+        width: 60%;
+        margin: 20px;
+    }
+}

@@ -8,7 +8,7 @@ import "./admin.css";
 
 //modals
 import ModalView from "../../components/ModalView";
-import MailinglistView from "../../components/admin/Mailinglist";
+import Mailinglist from "../../components/admin/Mailinglist";
 import NewEvent from "../../components/admin/NewEvent";
 import EditEvent from "../../components/admin/EditEvent";
 import AddToLabel from "../../components/admin/AddToLabel";
@@ -30,7 +30,7 @@ export default function Admin() {
     const openModal = (i: number) => {
         switch (i) {
             case 1:
-                return <MailinglistView />;
+                return <Mailinglist />;
             case 2:
                 return <NewEvent />;
             case 3:

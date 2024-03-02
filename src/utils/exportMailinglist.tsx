@@ -1,15 +1,14 @@
-import { MailinglistResponseType } from "../components/admin/Mailinglist";
+import { MailinglistResponseType } from "@/components/admin/Mailinglist";
 import axios from "./axios";
 
 type Part = string[];
-
 interface List {
     [propName: string]: Part;
 }
 
-export default function MailinglistExportList(
+export default function exportMailinglist(
     mailinglist: MailinglistResponseType[]
-) {
+): Promise<string> {
     let list: List = {};
     let j: number = 0;
 
@@ -25,7 +24,5 @@ export default function MailinglistExportList(
     }
 
     console.log(list);
-    axios.post("/api/mailinglist/exportlist", list).then((response) => {
-        console.log("axios response: ", response);
-    });
+    return axios.post("/api/mailinglist/exportlist", list);
 }
