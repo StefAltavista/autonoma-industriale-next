@@ -8,6 +8,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Autonoma Industriale",
+    description: " ",
+    keywords: [
+        "berlin",
+        "industrial",
+        "noise",
+        "punk",
+        "industrial music",
+        "event",
+        "events",
+    ],
 };
 
 export default function RootLayout({
