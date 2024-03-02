@@ -18,6 +18,7 @@ export const metadata: Metadata = {
         "event",
         "events",
     ],
+    icons: "/icons/icon.ico",
 };
 
 export default function RootLayout({
