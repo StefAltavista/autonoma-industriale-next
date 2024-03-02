@@ -23,11 +23,6 @@ export default function Authorize() {
         <div>
             {isVisib && (
                 <div className="authorize">
-                    {error && (
-                        <p className="error">
-                            Something went wrong, please try again
-                        </p>
-                    )}
                     <input
                         className="password"
                         placeholder="Password"
@@ -35,6 +30,11 @@ export default function Authorize() {
                         onChange={handleChange}
                     />
                     <button onClick={handleClick}>Submit</button>
+                    {error && (
+                        <p className="error">
+                            Something went wrong, please try again
+                        </p>
+                    )}
                 </div>
             )}
             {thanks && <p>Welcome Comrade</p>}
