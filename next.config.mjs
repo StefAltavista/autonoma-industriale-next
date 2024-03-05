@@ -6,8 +6,8 @@ const nextConfig = {
         return env == "production"
             ? [
                   {
-                      source: "/:path((?!_next|images|videos|icons|comingsoon|admin|mailinglist/*).*)",
-                      destination: "/comingsoon",
+                      source: "/:path((?!_next|images|videos|icons|admin|mailinglist/*).*)",
+                      destination: "/mailinglist/subscribe",
                       permanent: false,
                   },
               ]
