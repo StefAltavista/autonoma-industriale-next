@@ -43,6 +43,13 @@
     height: 100%;
     object-fit: cover;
 }
+.top_image {
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .top_img {
     /* margin-top: 50vw; */
     opacity: 0.8;
@@ -69,11 +76,8 @@
     mix-blend-mode: color-dodge;
 }
 .toptriangle {
-    width: 100vw;
-    height: 100vh;
-    /* transform: scale(0.6); */
-    /* margin-top: -300px; */
     opacity: 0.7;
+    transform: scale(0.75);
 }
 
 .comingsoonTextSection {

@@ -45,15 +45,15 @@ export default function ComingSoon() {
                     </video>
                 </Suspense>
                 <div id="comingsoon">
-                    <Suspense>
+                    <div className="top_image">
                         <Image
                             src="/images/comingsoon/ziegra_26_10/triangle.png"
                             alt="poster"
-                            width={1000}
-                            height={1000}
+                            width={800}
+                            height={800}
                             className="toptriangle mixBlend"
                         />
-                    </Suspense>
+                    </div>
                     <Suspense>
                         <Image
                             src="/images/comingsoon/ziegra_26_10/green_graffiti.png"
