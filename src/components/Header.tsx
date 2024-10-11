@@ -10,9 +10,9 @@ export default function Header() {
     const [toggleMenu, setToggleMenu] = useState(false);
     const pathname = usePathname();
     const env = process.env.NODE_ENV;
-    console.log(
-        env == "development" ? "DEVELOPMENT MODE" : "Welcome in Autonoma"
-    );
+    // console.log(
+    //     env == "development" ? "DEVELOPMENT MODE" : "Welcome in Autonoma"
+    // );
 
     const header = pathname != "/comingsoon" && (
         <div id="header">

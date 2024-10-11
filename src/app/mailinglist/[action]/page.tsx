@@ -9,7 +9,7 @@ interface MailinglistProps {
 
 export default function Mailinglist({ params }: MailinglistProps) {
     const { action } = params;
-    console.log(action);
+    // console.log(action);
     if (action != "subscribe" && action != "unsubscribe") {
         redirect("/");
     }

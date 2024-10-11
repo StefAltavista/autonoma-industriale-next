@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 255, 85);
+    color: red;
     cursor: pointer;
 }
 
@@ -15,7 +15,7 @@
     margin-left: 60px;
     font-family: "Josefin Sans", sans-serif;
     font-size: 20px;
-    color: #b71f1f;
+    color: #b7201f;
 }
 
 .close {
@@ -43,35 +43,11 @@
     height: 100%;
     object-fit: cover;
 }
-.top_img {
-    /* margin-top: 50vw; */
-    opacity: 0.8;
-}
 #comingsoon img {
     width: 100%;
 
     object-fit: scale-down;
     z-index: 1;
-}
-.mixBlend {
-    mix-blend-mode: color-dodge;
-}
-.othermixBlend {
-    /* mix-blend-mode: color-dodge; */
-    transform: scale(0.5);
-
-    margin-top: -250px;
-}
-.bottom_logo {
-    transform: scale(2);
-    margin-top: 400px;
-    margin-bottom: 400px;
-    mix-blend-mode: color-dodge;
-}
-.toptriangle {
-    transform: scale(0.6);
-    margin-top: -300px;
-    opacity: 0.7;
 }
 
 .comingsoonTextSection {
@@ -79,7 +55,7 @@
     margin-bottom: 100px;
     z-index: 1;
     padding: 10%;
-    background: rgba(0, 0, 0, 0.555);
+    background: rgba(0, 0, 0, 0.777);
 }
 .comingsoonInfo {
     margin-top: 100px;
@@ -91,15 +67,11 @@
 
 .comingsoonInfo p {
     text-align: center;
-    font-size: 35px;
-    /* font-weight: bold; */
-    color: rgb(112, 255, 112);
-    mix-blend-mode: hard-light;
-    text-shadow: 4px 2px 1px #000000;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .description {
-    text-shadow: 4px 4px 20px rgba(53, 255, 53, 0.539);
     font-size: 120px;
     padding: 10px;
     text-align: justify;
@@ -135,13 +107,6 @@
     background-color: #110b0b57;
     animation-iteration-count: infinite;
 }
-
-.slow_flash {
-    animation-name: flashing;
-    animation-duration: 10s;
-    background-color: #110b0b57;
-    animation-iteration-count: infinite;
-}
 .comingsoon-space {
     width: 100%;
     min-height: 100vh;
@@ -161,23 +126,17 @@
 }
 @keyframes flashing {
     0% {
-        filter: brightness(0%) hue-rotate(200deg);
+        filter: brightness(0%);
     }
 
     15% {
-        filter: brightness(1000%);
+        filter: brightness(10000%);
     }
     30% {
         filter: brightness(50%);
     }
-    40% {
-        filter: brightness(5000%);
-    }
-    70% {
-        filter: brightness(5%);
-    }
     80% {
-        filter: brightness(5000%);
+        filter: brightness(500000%);
     }
     100% {
         filter: brightness(50%);
