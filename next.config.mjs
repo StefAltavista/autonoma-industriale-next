@@ -32,15 +32,6 @@ const nextConfig = {
                   },
               ]
             : [];
-        // return env == "production"
-        //     ? [
-        //           {
-        //               source: "/*",
-        //               destination: "/comingsoon",
-        //               permanent: true,
-        //           },
-        //       ]
-        //     : [];
     },
 
     images: {

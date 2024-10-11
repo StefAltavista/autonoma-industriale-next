@@ -49,8 +49,8 @@ export default function ComingSoon() {
                         <Image
                             src="/images/comingsoon/ziegra_26_10/triangle.png"
                             alt="poster"
-                            width={2480}
-                            height={2480}
+                            width={1000}
+                            height={1000}
                             className="toptriangle mixBlend"
                         />
                     </Suspense>
