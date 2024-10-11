@@ -44,8 +44,9 @@
     object-fit: cover;
 }
 .top_image {
+    position: relative;
     width: 100vw;
-    height: 100vw;
+    min-height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
