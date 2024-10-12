@@ -10,12 +10,11 @@ import logoAutonoma from "@/../public/images/logoAutonoma.png";
 export default function ComingSoon() {
     const videoRef = useRef<any>();
     const [enter, setEnter] = useState(false);
-
     const enterPage = () => {
         setEnter(true);
         videoRef.current.play();
     };
-
+    fetch("/api/counter");
     return (
         <div>
             {!enter ? (
