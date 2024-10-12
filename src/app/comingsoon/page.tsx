@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Suspense, useRef, useState } from "react";
 import MuteButton from "@/components/MuteButton";
 import Subscribe from "@/components/Subscribe";
+import logoAutonoma from "@/../public/images/logoAutonoma.png";
 
 export default function ComingSoon() {
     const videoRef = useRef<any>();
@@ -20,10 +21,11 @@ export default function ComingSoon() {
             {!enter ? (
                 <div id="comingsoon-intro" onClick={() => enterPage()}>
                     <Image
-                        src="/images/logoAutonoma.png"
+                        src={logoAutonoma}
                         width={100}
                         height={90}
                         alt="logoAutonoma"
+                        priority={true}
                     />
                     <h1>E N T E R</h1>
                 </div>
