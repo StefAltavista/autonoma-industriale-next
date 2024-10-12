@@ -2,7 +2,7 @@
 import "./comingsoon.css";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import MuteButton from "@/components/MuteButton";
 import Subscribe from "@/components/Subscribe";
 import logoAutonoma from "@/../public/images/logoAutonoma.png";
@@ -14,7 +14,10 @@ export default function ComingSoon() {
         setEnter(true);
         videoRef.current.play();
     };
-    fetch("/api/counter");
+    useEffect(() => {
+        fetch("/api/counter");
+    }, []);
+
     return (
         <div>
             {!enter ? (
