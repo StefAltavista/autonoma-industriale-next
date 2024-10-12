@@ -179,7 +179,7 @@
         filter: brightness(800%);
     }
     70% {
-        filter: brightness(100%) hue-rotate(-100deg);
+        filter: brightness(100%) hue-rotate(-110deg);
     }
     80% {
         filter: brightness(500%);
@@ -189,12 +189,12 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .comingsoonInfo {
+@media only screen and (max-width: 900px) {
+    .comingsoonInfo p {
         font-size: 16px;
     }
     .video {
-        width: 100%;
+        width: 100vw;
     }
     .description {
         font-size: 70px;

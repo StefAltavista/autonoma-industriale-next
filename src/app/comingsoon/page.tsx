@@ -67,10 +67,12 @@ export default function ComingSoon() {
                     <div className="comingsoonTextSection comingsoonInfo flash">
                         <p>
                             Saturday 26th of October 2024<br></br>23:00pm to
-                            12:00pm<br></br>The most unusual secret location of
+                            12:00pm<br></br>A most unusual secret location of
                             Ziegrastrasse 11, Neukölln Berlin<br></br>
-                            Subscribe to our channels for more info
                         </p>
+                        <Link href={"#subscribe_link"}>
+                            <p>More info...</p>
+                        </Link>
                     </div>
 
                     <div className="comingsoonTextSection description ">
@@ -256,7 +258,10 @@ export default function ComingSoon() {
                             className="othermixBlend "
                         />
                     </Suspense>
-                    <div className="comingsoonTextSection links">
+                    <div
+                        className="comingsoonTextSection links"
+                        id="subscribe_link"
+                    >
                         <p>
                             Join our mailing list for more info regarding this
                             and other events
