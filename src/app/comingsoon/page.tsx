@@ -2,6 +2,7 @@
 import "./comingsoon.css";
 import Image from "next/image";
 import Link from "next/link";
+
 import { Suspense, useEffect, useRef, useState } from "react";
 import MuteButton from "@/components/MuteButton";
 import Subscribe from "@/components/Subscribe";

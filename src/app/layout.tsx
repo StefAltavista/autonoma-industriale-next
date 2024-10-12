@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import sharp from "sharp";
 import Header from "@/components/Header";
 import { GlobalProvider } from "../globalContext/context";
+
+sharp.simd(false);
 
 const inter = Inter({ subsets: ["latin"] });
 
