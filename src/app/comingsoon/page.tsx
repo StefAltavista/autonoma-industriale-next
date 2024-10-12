@@ -30,39 +30,37 @@ export default function ComingSoon() {
             ) : null}
             <div className={enter ? "open" : "close"}>
                 <MuteButton videoRef={videoRef} visible={enter} />
-                <Suspense>
-                    <video
-                        className="video"
-                        loop
-                        ref={videoRef}
-                        playsInline
-                        preload="auto"
-                    >
-                        <source
-                            src="/videos/ziegra_26_10_teaser.mp4"
-                            type="video/mp4"
-                        />
-                    </video>
-                </Suspense>
+
+                <video
+                    className="video"
+                    loop
+                    ref={videoRef}
+                    playsInline
+                    preload="auto"
+                >
+                    <source
+                        src="/videos/ziegra_26_10_teaser.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+
                 <div id="comingsoon">
                     <div className="top_image">
                         <Image
                             src="/images/comingsoon/ziegra_26_10/triangle.png"
                             alt="poster"
-                            width={800}
-                            height={800}
+                            width={500}
+                            height={500}
                             className="toptriangle mixBlend"
                         />
                     </div>
-                    <Suspense>
-                        <Image
-                            src="/images/comingsoon/ziegra_26_10/green_graffiti.png"
-                            alt="poster"
-                            width={2400}
-                            height={2400}
-                            className="mixBlend top_img"
-                        />
-                    </Suspense>
+                    <Image
+                        src="/images/comingsoon/ziegra_26_10/green_graffiti.png"
+                        alt="poster"
+                        width={2400}
+                        height={2400}
+                        className="mixBlend graffiti_img"
+                    />
 
                     <div className="comingsoonTextSection comingsoonInfo flash">
                         <p>
@@ -73,8 +71,8 @@ export default function ComingSoon() {
                         </p>
                     </div>
 
-                    <div className="comingsoonTextSection description slow_flash">
-                        <p>
+                    <div className="comingsoonTextSection description ">
+                        <p className="slow_flash">
                             A <strong>S</strong>ONI<strong>C</strong> RITUAL OF
                             PSYC<strong>H</strong>IC EXPLO<strong>R</strong>AT
                             <strong>I</strong>ON
@@ -112,12 +110,12 @@ export default function ComingSoon() {
                                 ebm, industrial and techno curveballs.
                                 Distorted, intricate and as dark as it gets.
                             </p>
-                            <a
+                            <Link
                                 href="https://beauwanzer.bandcamp.com"
                                 target="blank"
                             >
                                 LINK
-                            </a>
+                            </Link>
                         </div>
                         <div className="artist">
                             <strong>Elena Sizova</strong>
@@ -140,12 +138,12 @@ export default function ComingSoon() {
                                 with the obscure``. Electro and Techno at its
                                 best.
                             </p>
-                            <a
+                            <Link
                                 href="https://soundcloud.com/lectra"
                                 target="blank"
                             >
                                 LINK
-                            </a>
+                            </Link>
                         </div>
                         <div className="artist">
                             <strong>Lycurgus</strong>
@@ -166,12 +164,12 @@ export default function ComingSoon() {
                                 raw, heavy, machine made industrial. His rare
                                 appearance live is something you want to catch.
                             </p>
-                            <a
+                            <Link
                                 href="https://soundcloud.com/lykourg"
                                 target="blank"
                             >
                                 LINK
-                            </a>
+                            </Link>
                         </div>
                         <div className="artist">
                             <strong>Parand</strong>
@@ -192,12 +190,12 @@ export default function ComingSoon() {
                                 released soon on Umwelt`s New Flesh, is the next
                                 step of a path she is writing wax after wax.
                             </p>
-                            <a
+                            <Link
                                 href="https://soundcloud.com/paranddd"
                                 target="blank"
                             >
                                 LINK
-                            </a>
+                            </Link>
                         </div>
                         <div className="artist">
                             <strong>GIA b2b Control Delete</strong>
@@ -215,12 +213,12 @@ export default function ComingSoon() {
                                 Double dose of relentless insanity, we would say
                                 get ready, but you never will.
                             </p>
-                            <a
+                            <Link
                                 href="https://soundcloud.com/paranddd"
                                 target="blank"
                             >
                                 LINK
-                            </a>
+                            </Link>
                         </div>
                         <div className="artist">
                             <strong>Unprofessional</strong>
@@ -238,12 +236,12 @@ export default function ComingSoon() {
                                 with their bags of unfiltered material.
                                 Unprofessional is at the edge of it all.
                             </p>
-                            <a
+                            <Link
                                 href="https://soundcloud.com/unprofessional"
                                 target="blank"
                             >
                                 LINK
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -264,12 +262,12 @@ export default function ComingSoon() {
                         <Subscribe />
                         <p>
                             or if you prefer, our{" "}
-                            <a
+                            <Link
                                 href="https://t.me/autonomaindustriale"
                                 target="blank"
                             >
                                 Telegram
-                            </a>{" "}
+                            </Link>{" "}
                             channel
                         </p>
                     </div>
@@ -298,13 +296,15 @@ export default function ComingSoon() {
                         </p> */}
                     </div>
                     <div id="comingsoonBottomLogo">
-                        <Image
-                            src="/images/logoAutonoma.png"
-                            width={100}
-                            height={100}
-                            alt="Logo"
-                            className=" bottom_logo"
-                        />
+                        <Suspense>
+                            <Image
+                                src="/images/logoAutonoma.png"
+                                width={100}
+                                height={100}
+                                alt="Logo"
+                                className=" bottom_logo"
+                            />
+                        </Suspense>
                     </div>
                     {/* <div className="comingsoon-space"></div> */}
                 </div>
