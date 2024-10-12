@@ -179,7 +179,7 @@
         filter: brightness(800%);
     }
     70% {
-        filter: brightness(100%) hue-rotate(-110deg);
+        filter: brightness(100%) hue-rotate(-120deg);
     }
     80% {
         filter: brightness(500%);

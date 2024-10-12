@@ -68,7 +68,7 @@ export default function ComingSoon() {
                         <p>
                             Saturday 26th of October 2024<br></br>23:00pm to
                             12:00pm<br></br>A most unusual secret location of
-                            Ziegrastrasse 11, Neukölln Berlin<br></br>
+                            Ziegrastrasse 11, Berlin - Neukölln<br></br>
                         </p>
                         <Link href={"#subscribe_link"}>
                             <p>More info...</p>

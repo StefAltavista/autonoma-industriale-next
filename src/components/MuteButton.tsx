@@ -29,7 +29,7 @@ export default function MuteButton({ videoRef, visible }: any) {
                     videoRef.current.muted = !muteIcon;
                     setMuteIcon(!muteIcon);
                 }}
-                src={muteIcon ? "/icons/SoundOn.png" : "/icons/SoundOff.png"}
+                src={muteIcon ? "/icons/SoundOff.png" : "/icons/SoundOn.png"}
                 width={20}
                 height={20}
             />
