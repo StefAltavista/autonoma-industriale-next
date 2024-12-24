@@ -2,6 +2,7 @@
 import "./comingsoon.css";
 import Image from "next/image";
 import Link from "next/link";
+
 import { Suspense, useEffect, useRef, useState } from "react";
 import MuteButton from "@/components/MuteButton";
 import Subscribe from "@/components/Subscribe";
@@ -20,33 +21,7 @@ export default function ComingSoon() {
 
     return (
         <div>
-            <div id="comingsoon-intro" style={{ color: "red" }}>
-                <Image
-                    src={logoAutonoma}
-                    width={100}
-                    height={90}
-                    alt="logoAutonoma"
-                    priority={true}
-                />
-
-                <p>
-                    Join our mailing list for more info regarding this and other
-                    events
-                </p>
-                <Subscribe />
-                <p>
-                    or if you prefer, our{" "}
-                    <Link
-                        href="https://t.me/autonomaindustriale"
-                        target="blank"
-                    >
-                        Telegram
-                    </Link>{" "}
-                    channel
-                </p>
-            </div>
-
-            {/* {!enter ? (
+            {!enter ? (
                 <div id="comingsoon-intro" onClick={() => enterPage()}>
                     <Image
                         src={logoAutonoma}
@@ -57,7 +32,7 @@ export default function ComingSoon() {
                     />
                     <h1>E N T E R</h1>
                 </div>
-            ) : null} */}
+            ) : null}
             <div className={enter ? "open" : "close"}>
                 <MuteButton videoRef={videoRef} visible={enter} />
 
@@ -99,37 +74,24 @@ export default function ComingSoon() {
                             Ziegrastrasse 11, Berlin - Neukölln<br></br>
                         </p>
                         <Link href={"#subscribe_link"}>
-                            <p>
-                                mo<strong>R</strong>e info...
-                            </p>
+                            <p>More info...</p>
                         </Link>
                     </div>
 
                     <div className="comingsoonTextSection description ">
                         <p className="slow_flash">
-                            l<strong>A</strong>st-min<strong>U</strong>te
-                            edition to break the i<strong>C</strong>e of Berlin
-                            winter’s severity. T<strong>H</strong>is time, we
-                            will dive deep into the cold subcultures with t
-                            <strong>H</strong>ree debut performances. Fe
-                            <strong>A</strong>t<strong>U</strong>ring 1/2 of
-                            Mueran Humano<strong>S</strong>: NOCHTEF, the dark
-                            wave duo CONTES CRUELS and post punk to EBM
-                            shredding SANTACRUZ. Next up, the noisy industrial
-                            madness of Leipzig’s OLIOTRONIX, the obscu
-                            <strong>R</strong>e ambient
-                            <strong>A</strong>tmosphere of BRIDE, and the
-                            forward-thinking techno of Milan-based SIMONA
-                            ZAMBOLI. We are also thrilled to welcome the deb
-                            <strong>U</strong>t of industrial te
-                            <strong>CH</strong>no power<strong>H</strong>ouse
-                            CRANYA, who will join our in-house techno militia:
-                            finally b<strong>A</strong>ck on stage, o
-                            <strong>U</strong>r beloved EYES GONE, followed by
-                            re<strong>S</strong>ident NACASAT. Where?? In the
-                            profound secrets of Kreuzberg’s Fumeríe at
-                            Bethaniendamm <strong>666</strong>. <br></br>
-                            Subscribe or pm for info!
+                            A <strong>S</strong>ONI<strong>C</strong> RITUAL OF
+                            PSYC<strong>H</strong>IC EXPLO<strong>R</strong>AT
+                            <strong>I</strong>ON
+                            <br></br>
+                            <br></br>
+                            The <strong>P</strong>rom<strong>P</strong>t descend
+                            of th<strong>E</strong> flying saucer is set to land
+                            for t<strong>H</strong>e first encounter in one of
+                            the grittiest DIY sp<strong>A</strong>ces in town{" "}
+                            <strong>W</strong>ith <strong>A</strong> line-up of
+                            outs<strong>I</strong>ders from the edges of the
+                            electronic mus<strong>I</strong>c world:
                         </p>
                     </div>
 
@@ -143,7 +105,18 @@ export default function ComingSoon() {
                                 width={500}
                                 height={500}
                             ></Image> */}
-                            <p></p>
+                            <p>
+                                [Nation - Dark Entries]
+                                <br></br>
+                                <br></br>
+                                Over excited to bring in town Chicago`s weirdest
+                                Beau Wanzer. Inspired by early industrial and
+                                minimal synth from the `80s, with releases on
+                                Mannequin, Dark Entries and Minimal Wave to name
+                                a few, his music is an unpredictable mixture of
+                                ebm, industrial and techno curveballs.
+                                Distorted, intricate and as dark as it gets.
+                            </p>
                             <Link
                                 href="https://beauwanzer.bandcamp.com"
                                 target="blank"
@@ -159,7 +132,19 @@ export default function ComingSoon() {
                                     width={500}
                                     height={500}
                                 ></Image> */}
-                            <p></p>
+                            <p>
+                                [Der Zykklus - Outsounder]
+                                <br></br>
+                                <br></br>
+                                One of the finest selectors we’ve had the chance
+                                to listen to. Engineering lecturer at the
+                                National Technical University of Minsk during
+                                the day, half of Der Zyklus along Heinrich
+                                Mueller, her mixes are a sonic exploration that
+                                weaves together `the old with the new, the rare
+                                with the obscure``. Electro and Techno at its
+                                best.
+                            </p>
                             <Link
                                 href="https://soundcloud.com/lectra"
                                 target="blank"
@@ -175,7 +160,17 @@ export default function ComingSoon() {
                                     width={500}
                                     height={500}
                                 ></Image> */}
-                            <p></p>
+                            <p>
+                                [Bunker Panzerkreuz - Tar Hallow]
+                                <br></br> <br></br>
+                                Athens based Lycurgus is an elusive figure in
+                                the deeper underground. He has released some
+                                seriously abrasive music on legendary labels
+                                such as the dutch Bunker Panzerkreuz and Pi
+                                Electronics. His music is corrosive as acid,
+                                raw, heavy, machine made industrial. His rare
+                                appearance live is something you want to catch.
+                            </p>
                             <Link
                                 href="https://soundcloud.com/lykourg"
                                 target="blank"
@@ -191,7 +186,17 @@ export default function ComingSoon() {
                                     width={500}
                                     height={500}
                                 ></Image>{" "} */}
-                            <p></p>
+                            <p>
+                                [New Flesh] DJ
+                                <br></br> <br></br>
+                                Iranian born, Berlin based electro queen Parand
+                                relentlessly worked her way in the city’s wide
+                                sonic spectrum spinning records and sharing
+                                decks with several influential artists during
+                                these last years. Her new work, set to be
+                                released soon on Umwelt`s New Flesh, is the next
+                                step of a path she is writing wax after wax.
+                            </p>
                             <Link
                                 href="https://soundcloud.com/paranddd"
                                 target="blank"
@@ -209,11 +214,11 @@ export default function ComingSoon() {
                                 ></Image> */}
                             <p>
                                 [Autonoma Industriale]
-                                {/* <br></br> <br></br>
+                                <br></br> <br></br>
                                 Not much presentation is neded, two of our most
                                 loved freaks, for the first time back2back.
                                 Double dose of relentless insanity, we would say
-                                get ready, but you never will. */}
+                                get ready, but you never will.
                             </p>
                             <Link
                                 href="https://soundcloud.com/paranddd"

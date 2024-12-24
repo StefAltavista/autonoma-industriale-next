@@ -21,7 +21,7 @@ export default function Subscribe() {
                     )}
                     <input
                         name="email"
-                        placeholder="enter e-mail"
+                        placeholder="e-mail address"
                         value={thanks ? "" : email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
