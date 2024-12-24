@@ -30,8 +30,7 @@ export default function ComingSoon() {
                 />
 
                 <p>
-                    Join our mailing list for more info regarding this and other
-                    events
+                    Join our mailing list for more info regarding our next event
                 </p>
                 <Subscribe />
                 <p>
