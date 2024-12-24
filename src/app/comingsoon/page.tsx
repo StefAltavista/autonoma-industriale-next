@@ -38,9 +38,10 @@ export default function ComingSoon() {
                     <Link
                         href="https://t.me/autonomaindustriale"
                         target="blank"
+                        style={{ color: "white" }}
                     >
                         Telegram
-                    </Link>{" "}
+                    </Link>
                     channel
                 </p>
             </div>
