@@ -40,7 +40,7 @@ export default function ComingSoon() {
                         target="blank"
                         style={{ color: "white" }}
                     >
-                        Telegram
+                        Telegram{" "}
                     </Link>
                     channel
                 </p>
