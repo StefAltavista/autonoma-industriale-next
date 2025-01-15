@@ -149,7 +149,7 @@ export default function ComingSoon() {
                             <strong>U</strong>gh <strong>C</strong>ontemporary
                             dystopian degeneration and t<strong>H</strong>e
                             severity of Berlin`s winter. <br></br>
-                            <br></br>Starts at 21:00pm `till late <br></br>
+                            <br></br>January 18th 2025 - at 21:00 <br></br>
                             <br></br>In the secret promises of the{" "}
                             <strong>HAUS</strong> of George von Rauch
                             <br></br>
