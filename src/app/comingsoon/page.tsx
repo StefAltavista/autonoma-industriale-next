@@ -147,7 +147,7 @@ export default function ComingSoon() {
                             9 Live Shows to b<strong>R</strong>e
                             <strong>A</strong>k thro
                             <strong>U</strong>gh <strong>C</strong>ontemporary
-                            dystopian degeneration and the severity of Berlin's
+                            dystopian degeneration and the severity of Berlin`s
                             winter. <br></br>
                             <br></br>T<strong>H</strong>is time, we will dive
                             deep into the cold subcultures with t
