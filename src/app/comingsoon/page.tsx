@@ -147,9 +147,14 @@ export default function ComingSoon() {
                             9 Live Shows to b<strong>R</strong>e
                             <strong>A</strong>k thro
                             <strong>U</strong>gh <strong>C</strong>ontemporary
-                            dystopian degeneration and the severity of Berlin`s
-                            winter. <br></br>
-                            <br></br>T<strong>H</strong>is time, we will dive
+                            dystopian degeneration and t<strong>H</strong>e
+                            severity of Berlin`s winter. <br></br>
+                            <br></br>Starts at 21:00pm `till late <br></br>
+                            <br></br>In the secret promises of the{" "}
+                            <strong>HAUS</strong> of George von Rauch
+                            <br></br>
+                            Bethaniendamm 666, 10997 Berlin - Kreuzberg<br></br>
+                            {/* <br></br>T<strong>H</strong>is time, we will dive
                             deep into the cold subcultures with t
                             <strong>H</strong>ree debut performances. Fe
                             <strong>A</strong>t<strong>U</strong>ring 1/2 of
@@ -167,7 +172,7 @@ export default function ComingSoon() {
                             CRANYA, who will join our in-house techno militia:
                             finally b<strong>A</strong>ck on stage, o
                             <strong>U</strong>r beloved EYES GONE, followed by
-                            re<strong>S</strong>ident NACASAT.
+                            re<strong>S</strong>ident NACASAT. */}
                         </p>
                     </div>
 
