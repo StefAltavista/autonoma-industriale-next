@@ -8,6 +8,7 @@ import Subscribe from "@/components/Subscribe";
 import logoAutonoma from "@/../public/images/logoAutonoma.png";
 
 export default function ComingSoon() {
+    const imgBaseUrl = "/images/comingsoon/rauchhaus/";
     const videoRef = useRef<any>();
     const [enter, setEnter] = useState(false);
     const enterPage = () => {
@@ -18,35 +19,75 @@ export default function ComingSoon() {
         fetch("/api/counter");
     }, []);
 
+    const artists = [
+        {
+            name: "Nochteff",
+            photo: "nochteff.jpg",
+            link: "https://http://www.youtube.com/watch?v=ItV5iKi-DVM&ab_channel=HeadsRadio",
+            description:
+                "Founder and bass player of the legendary formation Dios (1992), half of the internationally acclaimed duo Mueran Humanos, Nochteff is the latest project of the Argentinian musician Tomás Nochteff. Looped bass lines and mechanical drums meets poetry in this flaming incarnation of an artist whose legacy extends oversee. Fire, walk with me.",
+        },
+        {
+            name: "Simona Zamboli",
+            photo: "zamboli.jpg",
+            link: "https://forceincmilleplateaux.bandcamp.com/album/a-laugh-will-bury-you",
+            description:
+                "Sound engineer and designer based in Milano. Her works use a combination of analog synthesis and digital processing via computer music, playing freely in repetitive, yet free, chaotic, noisy and interrupted patterns.",
+        },
+        {
+            name: "Santacruz",
+            photo: "santacruz.jpg",
+            link: "https://www.youtube.com/watch?v=wlhbsyBsgzM&ab_channel=SANTACRUZ",
+            description:
+                "Already DIY 1990, alias under which he releases his first EP for Lobster Theremin in 2017, Santacruz is the punk sublimation of musician and performer Alberto Santacruz. A distorted confluence of EBM, post punk and proto-industrial, his music already got the attention of the german cult label A+W, that in November 2024 list in their catalogue his single ‘Respiración’, along a remix from the excellent Spanish producer Geistform. Vibrant, charismatic, explosive, this performance is set to be one of the highlights of the night.",
+        },
+        {
+            name: "Bride",
+            photo: "bride.jpg",
+            link: "https://mybride.bandcamp.com/track/rotaewn-ravenous-people",
+            description:
+                "Bride is an experimental noise musician and sound artist, constructing allegories within harsh and dissonant environments to embrace a grating vehemence, often enchanting terror and warmth in chorus. She has released works on Psychic Liberation, Industrial Coast, Mindseyerecords, Longform Editions and No Holiday amongst others including her own label and platform Alloy Choir, started in early 2023.",
+        },
+        {
+            name: "Contes Cruels",
+            photo: "contes.jpg",
+            link: "https://contescruels.bandcamp.com/album/s-ance-2",
+            description:
+                "Also from Argentina, Contes Cruels is the dark wave duo formed by Pris V (Avant Post, Jinx, Nocturnal Emissions) and M. Cruel. Taking inspiration from the seminal post-punk sound of Britain, decadent literature and experimental electronic, Contes Cruels ventures into the realms of hauntology, crafting a minimalist, sensual sound where cold lyrics meets vintage gears to embody into a spectral presence and eclipse into postmodernity.",
+        },
+        {
+            name: "Cranya",
+            photo: "cranya.jpg",
+            link: "https://on.soundcloud.com/d1BksnB97i5gU4sV6",
+            description:
+                "Never deserting pitch black territories, Cranya has approached a variety of different facets of obscure dance music in the last years. The decaying stimuli of modern society are the main inspiration for his characteristic perpetual gloomy sound. Fascinated by the vigilant induced state and energy recharging power of disruptive music, “Cranya” unfolds this force on the floor.",
+        },
+        {
+            name: "Oliotronix",
+            photo: "oliotronix.jpg",
+            link: "https://gleeetch.bandcamp.com/album/murrrlo",
+            description:
+                "Audio hacker queen, notorious amongst those who knows that boundaries are but mere induced limitations. This unique, Leipzig based, cyberpunk musician delivers a crossover of most subversive electronic genres you’d barely heard of. An eclectic noise performance with a most liberating punk attitude. `When life gives you junk, make music with it`",
+        },
+        {
+            name: "Eyesgone",
+            photo: "eyesgone.jpg",
+            link: "https://www.youtube.com/watch?v=ripmpifsCLU&t=1359s&ab_channel=EyesGone",
+            description:
+                "Formally a bass player in punk bands, yet largely influenced by the works of Jeff Mills and Mark E.Smith. Their improvised live sets are oneiric journeys that deeply combines dub and techno to result in an immersive, black tinted experience.",
+        },
+        {
+            name: "Nacasat",
+            photo: "nacasat.jpg",
+            link: "https://soundcloud.com/destroyevsky5000/live-set-kora-transformatorA",
+            description:
+                "Known for sculpting hypnotic yet driving soundscapes, Nacasat’s sets are a masterclass in tension and release, capturing the gritty energy of warehouse raves while resonating on club sound systems.  DJ and producer with a decade-long legacy, their industrial-influenced techno has since echoed through some of Europe’s most revered venues, including Corsica Studios and Fold in London, Griessmühle and Mensch Meier in Berlin.",
+        },
+    ];
+
     return (
         <div>
-            <div id="comingsoon-intro" style={{ color: "red" }}>
-                <Image
-                    src={logoAutonoma}
-                    width={100}
-                    height={90}
-                    alt="logoAutonoma"
-                    priority={true}
-                />
-
-                <p>
-                    Join our mailing list for more info regarding our next event
-                </p>
-                <Subscribe />
-                <p>
-                    or if you prefer, our{" "}
-                    <Link
-                        href="https://t.me/autonomaindustriale"
-                        target="blank"
-                        style={{ color: "white" }}
-                    >
-                        Telegram{" "}
-                    </Link>
-                    channel
-                </p>
-            </div>
-
-            {/* {!enter ? (
+            {!enter ? (
                 <div id="comingsoon-intro" onClick={() => enterPage()}>
                     <Image
                         src={logoAutonoma}
@@ -57,7 +98,7 @@ export default function ComingSoon() {
                     />
                     <h1>E N T E R</h1>
                 </div>
-            ) : null} */}
+            ) : null}
             <div className={enter ? "open" : "close"}>
                 <MuteButton videoRef={videoRef} visible={enter} />
 
@@ -68,55 +109,55 @@ export default function ComingSoon() {
                     playsInline
                     preload="auto"
                 >
-                    <source
-                        src="/videos/ziegra_26_10_teaser.mp4"
-                        type="video/mp4"
-                    />
+                    <source src="/videos/teaser18Jan25.mp4" type="video/mp4" />
                 </video>
 
                 <div id="comingsoon">
                     <div className="top_image">
                         <Image
-                            src="/images/comingsoon/ziegra_26_10/triangle.png"
-                            alt="poster"
-                            width={500}
-                            height={500}
-                            className="toptriangle mixBlend"
+                            src={imgBaseUrl + "AutonomaCenter.png"}
+                            width={600}
+                            height={100}
+                            alt="autonomaindustriale"
                         />
                     </div>
-                    <Image
-                        src="/images/comingsoon/ziegra_26_10/green_graffiti.png"
-                        alt="poster"
-                        width={2400}
-                        height={2400}
-                        className="mixBlend graffiti_img"
-                    />
+                    <div className="top_image">
+                        <Image
+                            src={imgBaseUrl + "AdressCenter.png"}
+                            width={600}
+                            height={100}
+                            alt="autonomaindustriale"
+                        />{" "}
+                    </div>
 
-                    <div className="comingsoonTextSection comingsoonInfo flash">
-                        <p>
-                            Saturday 26th of October 2024<br></br>23:00pm to
-                            12:00pm<br></br>A most unusual secret location of
-                            Ziegrastrasse 11, Berlin - Neukölln<br></br>
-                        </p>
+                    <div className="comingsoonTextSection comingsoonInfo ">
+                        {/* <p>
+                            Saturday 18th of January 2025<br></br>21:00pm to
+                            06:00pm<br></br>In the secret promises of the house
+                            of George von Rauch<br></br>Bethaniendamm 666, 10997
+                            Berlin - Kreuzberg<br></br>
+                        </p> 
                         <Link href={"#subscribe_link"}>
-                            <p>
-                                mo<strong>R</strong>e info...
-                            </p>
-                        </Link>
+                            <p>more info...</p>
+                        </Link>*/}
                     </div>
 
                     <div className="comingsoonTextSection description ">
                         <p className="slow_flash">
-                            l<strong>A</strong>st-min<strong>U</strong>te
-                            edition to break the i<strong>C</strong>e of Berlin
-                            winter’s severity. T<strong>H</strong>is time, we
-                            will dive deep into the cold subcultures with t
+                            9 Live Shows to b<strong>R</strong>e
+                            <strong>A</strong>k thro
+                            <strong>U</strong>gh <strong>C</strong>ontemporary
+                            dystopian degeneration and the severity of Berlin's
+                            winter. <br></br>
+                            <br></br>T<strong>H</strong>is time, we will dive
+                            deep into the cold subcultures with t
                             <strong>H</strong>ree debut performances. Fe
                             <strong>A</strong>t<strong>U</strong>ring 1/2 of
                             Mueran Humano<strong>S</strong>: NOCHTEF, the dark
                             wave duo CONTES CRUELS and post punk to EBM
-                            shredding SANTACRUZ. Next up, the noisy industrial
-                            madness of Leipzig’s OLIOTRONIX, the obscu
+                            shredding SANTACRUZ. <br></br>
+                            <br></br>Next up, the noisy industrial madness of
+                            Leipzig’s OLIOTRONIX, the obscu
                             <strong>R</strong>e ambient
                             <strong>A</strong>tmosphere of BRIDE, and the
                             forward-thinking techno of Milan-based SIMONA
@@ -126,136 +167,37 @@ export default function ComingSoon() {
                             CRANYA, who will join our in-house techno militia:
                             finally b<strong>A</strong>ck on stage, o
                             <strong>U</strong>r beloved EYES GONE, followed by
-                            re<strong>S</strong>ident NACASAT. Where?? In the
-                            profound secrets of Kreuzberg’s Fumeríe at
-                            Bethaniendamm <strong>666</strong>. <br></br>
-                            Subscribe or pm for info!
+                            re<strong>S</strong>ident NACASAT.
                         </p>
                     </div>
 
                     <div className="comingsoonTextSection artists">
                         <p> Lineup </p>
-                        <div className="artist">
-                            <strong>Beau Wanzer</strong>
-                            {/* <Image
-                                src="/images/comingsoon/MouthWound.jpeg"
-                                alt="mouth wound"
-                                width={500}
-                                height={500}
-                            ></Image> */}
-                            <p></p>
-                            <Link
-                                href="https://beauwanzer.bandcamp.com"
-                                target="blank"
-                            >
-                                LINK
-                            </Link>
-                        </div>
-                        <div className="artist">
-                            <strong>Elena Sizova</strong>
-                            {/* <Image
-                                    src="/images/comingsoon/Gaja.jpeg"
-                                    alt="gaja"
-                                    width={500}
-                                    height={500}
-                                ></Image> */}
-                            <p></p>
-                            <Link
-                                href="https://soundcloud.com/lectra"
-                                target="blank"
-                            >
-                                LINK
-                            </Link>
-                        </div>
-                        <div className="artist">
-                            <strong>Lycurgus</strong>
-                            {/* <Image
-                                    src="/images/comingsoon/Exome.jpeg"
-                                    alt="exome"
-                                    width={500}
-                                    height={500}
-                                ></Image> */}
-                            <p></p>
-                            <Link
-                                href="https://soundcloud.com/lykourg"
-                                target="blank"
-                            >
-                                LINK
-                            </Link>
-                        </div>
-                        <div className="artist">
-                            <strong>Parand</strong>
-                            {/* <Image
-                                    src="/images/comingsoon/3sbat.jpeg"
-                                    alt="exome"
-                                    width={500}
-                                    height={500}
-                                ></Image>{" "} */}
-                            <p></p>
-                            <Link
-                                href="https://soundcloud.com/paranddd"
-                                target="blank"
-                            >
-                                LINK
-                            </Link>
-                        </div>
-                        <div className="artist">
-                            <strong>GIA b2b Control Delete</strong>
-                            {/* <Image
-                                    src="/images/comingsoon/3sbat.jpeg"
-                                    alt="exome"
-                                    width={500}
-                                    height={500}
-                                ></Image> */}
-                            <p>
-                                [Autonoma Industriale]
-                                {/* <br></br> <br></br>
-                                Not much presentation is neded, two of our most
-                                loved freaks, for the first time back2back.
-                                Double dose of relentless insanity, we would say
-                                get ready, but you never will. */}
-                            </p>
-                            <Link
-                                href="https://soundcloud.com/paranddd"
-                                target="blank"
-                            >
-                                LINK
-                            </Link>
-                        </div>
-                        <div className="artist">
-                            <strong>Unprofessional</strong>
-                            {/* <Image
-                                    src="/images/comingsoon/3sbat.jpeg"
-                                    alt="exome"
-                                    width={500}
-                                    height={500}
-                                ></Image> */}
-                            <p>
-                                [Forgotten Planet]
-                                <br></br> <br></br>
-                                Wild edge cut-up beats and nasty grooves. We are
-                                very happy to welcome back Unprofessional comes
-                                with their bags of unfiltered material.
-                                Unprofessional is at the edge of it all.
-                            </p>
-                            <Link
-                                href="https://soundcloud.com/unprofessional"
-                                target="blank"
-                            >
-                                LINK
-                            </Link>
-                        </div>
-                    </div>
 
-                    <Suspense>
-                        <Image
-                            src="/images/comingsoon/ziegra_26_10/poster.JPG"
-                            alt="poster"
-                            width={1400}
-                            height={1400}
-                            className="othermixBlend "
-                        />
-                    </Suspense>
+                        {artists.map((x, idx) => {
+                            return (
+                                <div className="artist" key={idx}>
+                                    <strong>{x.name}</strong>
+                                    {x.photo ? (
+                                        <Image
+                                            src={imgBaseUrl + x.photo}
+                                            alt={x.name}
+                                            width={500}
+                                            height={500}
+                                        ></Image>
+                                    ) : null}
+                                    <p></p>
+                                    <Link
+                                        href={x.link ? x.link : "/comingsoon"}
+                                        target="blank"
+                                    >
+                                        LINK
+                                    </Link>
+                                    <p>{x.description}</p>
+                                </div>
+                            );
+                        })}
+                    </div>
                     <div
                         className="comingsoonTextSection links"
                         id="subscribe_link"
@@ -276,12 +218,13 @@ export default function ComingSoon() {
                             channel
                         </p>
                     </div>
+
                     <div className="comingsoonTextSection disclaimer">
                         <p>
-                            Autonoma Industriale aims to create a safer and more
-                            inclusive enviroment, this means that there will be
-                            no tollerance for any kind of abusive, agressive or
-                            discriminatory behaviour. <br></br>
+                            Autonoma Industriale aims to create safer and more
+                            inclusive environments, this means that there will
+                            be no tolerance for any kind of abusive, aggressive
+                            or discriminatory behaviour. <br></br>
                             An awareness team will be present and recognisable
                             at any time.
                         </p>
