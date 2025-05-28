@@ -107,9 +107,9 @@
   color: transparent;
 
   background-color: #110b0b57;
-  text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.539);
+  text-shadow: 1px 1px 3px rgba(255, 0, 0, 0.7);
   font-size: 120px;
-  padding: 10px;
+  padding: 30px;
   text-align: justify;
 }
 .description p {
