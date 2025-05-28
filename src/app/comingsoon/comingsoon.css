@@ -210,3 +210,9 @@
     font-size: 50px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .artist h1 {
+    font-size: 35px;
+  }
+}
