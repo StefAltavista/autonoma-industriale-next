@@ -52,14 +52,17 @@ export default function ComingSoon() {
               alt="autonomaindustriale"
             />
           </div>
-          <div className="top_image to_top ">
-            <Image
-              src={imgBaseUrl + "hangedMan.png"}
-              width={1000}
-              height={800}
-              alt="autonomaindustriale"
-            />{" "}
-          </div>
+
+          {enter && (
+            <div className="top_image to_top ">
+              <Image
+                src={imgBaseUrl + "hangedMan.png"}
+                width={1000}
+                height={800}
+                alt="autonomaindustriale"
+              />{" "}
+            </div>
+          )}
 
           <div className="comingsoonTextSection comingsoonInfo "></div>
 
@@ -89,7 +92,7 @@ export default function ComingSoon() {
             {artists.map((x, idx) => {
               return (
                 <div className="artist" key={idx}>
-                  <h1 style={{ fontSize: "70px" }} className="flash">
+                  <h1 className="flash">
                     {" "}
                     <strong>{x.name}</strong>
                   </h1>

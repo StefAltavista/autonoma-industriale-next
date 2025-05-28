@@ -137,6 +137,9 @@
 .artist p {
   margin-top: 0%;
 }
+.artist h1 {
+  font-size: 70px;
+}
 
 .flash {
   animation-name: flashing;
@@ -202,5 +205,8 @@
 
   .description {
     font-size: 70px;
+  }
+  .artist h1 {
+    font-size: 50px;
   }
 }
