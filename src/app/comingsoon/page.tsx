@@ -61,17 +61,7 @@ export default function ComingSoon() {
             />{" "}
           </div>
 
-          <div className="comingsoonTextSection comingsoonInfo ">
-            {/* <p>
-                            Saturday 18th of January 2025<br></br>21:00pm to
-                            06:00pm<br></br>In the secret promises of the house
-                            of George von Rauch<br></br>Bethaniendamm 666, 10997
-                            Berlin - Kreuzberg<br></br>
-                        </p> 
-                        <Link href={"#subscribe_link"}>
-                            <p>more info...</p>
-                        </Link>*/}
-          </div>
+          <div className="comingsoonTextSection comingsoonInfo "></div>
 
           <div className="comingsoonTextSection description ">
             <p className="slow_flash glitch" data-glitch="glitch">
@@ -81,14 +71,25 @@ export default function ComingSoon() {
               belong, the tension between what is and what is not
             </p>
           </div>
-
+          <div className="comingsoonTextSection comingsoonInfo flash">
+            <p>
+              SATURDAY 7TH OF JUNE 2025<br></br>
+              <br></br>
+              SCREENING PROGRAM FROM 20:00{" "}
+              <i style={{ fontSize: "18px" }}>free entry</i>
+              <br></br>
+              <br></br>
+              CONCERT STARTS AT 22:00<br></br>UNTILL VERY LATE<br></br>
+            </p>
+            <h3>Køpi</h3>
+          </div>
           <div className="comingsoonTextSection artists">
-            <p>L I N E U P</p>
+            <h1>L I N E U P</h1>
 
             {artists.map((x, idx) => {
               return (
                 <div className="artist" key={idx}>
-                  <h1 className="wobble">
+                  <h1 style={{ fontSize: "70px" }} className="flash">
                     {" "}
                     <strong>{x.name}</strong>
                   </h1>
@@ -111,7 +112,12 @@ export default function ComingSoon() {
               );
             })}
           </div>
-          <div className="comingsoonTextSection links" id="subscribe_link">
+
+          <div
+            className="comingsoonTextSection links"
+            id="subscribe_link"
+            style={{ fontSize: "30px" }}
+          >
             <p>
               Join our mailing list for more info regarding this and other
               events
@@ -126,7 +132,19 @@ export default function ComingSoon() {
             </p>
           </div>
 
-          <div className="comingsoonTextSection disclaimer">
+          <div
+            className="comingsoonTextSection disclaimer"
+            style={{ fontSize: "20px", lineHeight: "30px" }}
+          >
+            <p>
+              **The proceeds of this event will be donated to ELSC.support{" "}
+              <br></br> The <strong>ELSC</strong> is the first and only
+              organisation that specialises in providing legal support and
+              assistance to all those facing repression for advocating for
+              Palestine across Europe including the UK.
+            </p>
+            <br></br>
+
             <p>
               Autonoma Industriale aims to create safer and more inclusive
               environments, this means that there will be no tolerance for any
@@ -138,15 +156,6 @@ export default function ComingSoon() {
               NO RACISM - NO HOMOPHOBIA - NO SEXISM - NO ZIONISM - NO
               ANTISEMITISM - NO FOOLS
             </p>
-
-            {/* <p>
-                            **Part of the proceeds of this event will be donated
-                            to ELSC.support <br></br> The ELSC is the first and
-                            only organisation that specialises in providing
-                            legal support and assistance to all those facing
-                            repression for advocating for Palestine across
-                            Europe including the UK.
-                        </p> */}
           </div>
           <div id="comingsoonBottomLogo">
             <Suspense>

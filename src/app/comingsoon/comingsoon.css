@@ -140,8 +140,8 @@
 
 .flash {
   animation-name: flashing;
-  animation-duration: 1s;
-  background-color: #110b0b57;
+  animation-duration: 0.2s;
+  background-color: #110b0b9a;
   animation-iteration-count: infinite;
 }
 
