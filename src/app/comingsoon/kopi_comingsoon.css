@@ -1,153 +1,153 @@
 #comingsoon-intro {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: red;
-    cursor: pointer;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  cursor: pointer;
 }
 
 #comingsoon-intro h1 {
-    margin: 50px;
-    margin-left: 60px;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 20px;
-    color: #b7201f;
+  margin: 50px;
+  margin-left: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: #b7201f;
 }
 
 .close {
-    height: 0;
-    overflow: hidden;
+  height: 0;
+  overflow: hidden;
 }
 .open {
-    height: 100%;
+  height: 100%;
 }
 
 /* ----In the page---- */
 
 #comingsoon {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 .video {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #comingsoon img {
-    width: 100%;
+  width: 100%;
 
-    object-fit: scale-down;
-    z-index: 1;
+  object-fit: scale-down;
+  z-index: 1;
 }
 
 .comingsoonTextSection {
-    width: 100vw;
-    margin-bottom: 100px;
-    z-index: 1;
-    padding: 10%;
-    background: rgba(0, 0, 0, 0.777);
+  width: 100vw;
+  margin-bottom: 100px;
+  z-index: 1;
+  padding: 10%;
+  background: rgba(0, 0, 0, 0.777);
 }
 .comingsoonInfo {
-    margin-top: 100px;
+  margin-top: 100px;
 
-    padding: 0;
-    background: rgba(255, 255, 255, 0.777);
-    color: black;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.777);
+  color: black;
 }
 
 .comingsoonInfo p {
-    text-align: center;
-    font-size: 26px;
-    font-weight: bold;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .description {
-    font-size: 120px;
-    padding: 10px;
-    text-align: justify;
+  font-size: 120px;
+  padding: 10px;
+  text-align: justify;
 }
 .description p {
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .artists {
-    font-size: 16px;
-    text-align: center;
+  font-size: 16px;
+  text-align: center;
 }
 .artist img {
-    margin: 0;
-    margin-top: 10px;
-    padding: 0;
-    background-color: #b7201f;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  background-color: #b7201f;
 }
 
 .artist {
-    border-top: 1px solid #b7201f;
-    padding-top: 10px;
-    margin-top: 40px;
-    margin-bottom: 50px;
+  border-top: 1px solid #b7201f;
+  padding-top: 10px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 .artist p {
-    margin-top: 0%;
+  margin-top: 0%;
 }
 
 .flash {
-    animation-name: flashing;
-    animation-duration: 1s;
-    background-color: #110b0b57;
-    animation-iteration-count: infinite;
+  animation-name: flashing;
+  animation-duration: 1s;
+  background-color: #110b0b57;
+  animation-iteration-count: infinite;
 }
 .comingsoon-space {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 .links {
-    text-align: center;
+  text-align: center;
 }
 .disclaimer {
-    font-style: italic;
+  font-style: italic;
 }
 
 #comingsoonBottomLogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* filter: brightness(99990%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* filter: brightness(99990%); */
 }
 @keyframes flashing {
-    0% {
-        filter: brightness(0%);
-    }
+  0% {
+    filter: brightness(0%);
+  }
 
-    15% {
-        filter: brightness(10000%);
-    }
-    30% {
-        filter: brightness(50%);
-    }
-    80% {
-        filter: brightness(500000%);
-    }
-    100% {
-        filter: brightness(50%);
-    }
+  15% {
+    filter: brightness(10000%);
+  }
+  30% {
+    filter: brightness(50%);
+  }
+  80% {
+    filter: brightness(500000%);
+  }
+  100% {
+    filter: brightness(50%);
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    .comingsoonInfo {
-        font-size: 16px;
-    }
-    .description {
-        font-size: 70px;
-    }
+  .comingsoonInfo {
+    font-size: 16px;
+  }
+  .description {
+    font-size: 70px;
+  }
 }

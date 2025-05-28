@@ -1,204 +1,206 @@
 #comingsoon-intro {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 255, 85);
-    cursor: pointer;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
 }
 
 #comingsoon-intro h1 {
-    margin: 50px;
-    margin-left: 60px;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 20px;
-    color: #b71f1f;
+  margin: 50px;
+  margin-left: 60px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: #b71f1f;
 }
 
 .close {
-    height: 0;
-    overflow: hidden;
+  height: 0;
+  overflow: hidden;
 }
 .open {
-    height: 100%;
+  height: 100%;
 }
 
 /* ----In the page---- */
 
 #comingsoon {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 .video {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .top_image {
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .toptriangle {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 .graffiti_img {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 #comingsoon img {
-    width: 100%;
-    object-fit: scale-down;
-    z-index: 1;
+  width: 100%;
+  object-fit: scale-down;
+  z-index: 1;
 }
 .mixBlend {
-    mix-blend-mode: color-dodge;
+  mix-blend-mode: color-dodge;
 }
 .othermixBlend {
-    /* mix-blend-mode: color-dodge; */
-    transform: scale(0.5);
+  /* mix-blend-mode: color-dodge; */
+  transform: scale(0.5);
 
-    margin-top: -250px;
+  margin-top: -250px;
 }
 .bottom_logo {
-    transform: scale(2);
-    margin-top: 400px;
-    margin-bottom: 400px;
-    mix-blend-mode: color-dodge;
+  transform: scale(2);
+  margin-top: 400px;
+  margin-bottom: 400px;
+  mix-blend-mode: color-dodge;
 }
 
 .comingsoonTextSection {
-    width: 100vw;
-    margin-bottom: 100px;
-    z-index: 1;
-    padding: 10%;
-    background: rgba(0, 0, 0, 0.555);
+  width: 100vw;
+  margin-bottom: 100px;
+  z-index: 1;
+  padding: 10%;
+  background: rgba(0, 0, 0, 0.555);
 }
 .comingsoonInfo {
-    margin-top: 100px;
+  margin-top: 100px;
 
-    padding: 0;
-    background: rgba(255, 255, 255, 0.777);
-    color: black;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.777);
+  color: black;
 }
 
 .comingsoonInfo p {
-    text-align: center;
-    font-size: 35px;
-    /* font-weight: bold; */
-    color: rgb(112, 255, 112);
-    mix-blend-mode: hard-light;
-    text-shadow: 4px 2px 1px #000000;
+  text-align: center;
+  font-size: 35px;
+  /* font-weight: bold; */
+  color: rgb(255, 0, 0);
+  mix-blend-mode: hard-light;
+  text-shadow: 4px 2px 1px #000000;
 }
 
 .description {
-    color: white;
-    background-color: #110b0b57;
-    text-shadow: 4px 4px 20px rgba(53, 255, 53, 0.539);
-    font-size: 120px;
-    padding: 10px;
-    text-align: justify;
+  color: transparent;
+
+  background-color: #110b0b57;
+  text-shadow: 4px 4px 4px rgba(255, 0, 0, 0.539);
+  font-size: 120px;
+  padding: 10px;
+  text-align: justify;
 }
 .description p {
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .artists {
-    font-size: 16px;
-    text-align: center;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(194, 14, 14);
 }
 .artist img {
-    margin: 0;
-    margin-top: 10px;
-    padding: 0;
-    background-color: #b7201f;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  background-color: #b7201f;
 }
 
 .artist {
-    border-top: 1px solid #b7201f;
-    padding-top: 10px;
-    margin-top: 40px;
-    margin-bottom: 50px;
+  border-top: 1px solid #b71f1f54;
+  /* padding-top: 10px; */
+  /* margin-top: 40px; */
+  /* margin-bottom: 50px; */
 }
 .artist p {
-    margin-top: 0%;
+  margin-top: 0%;
 }
 
 .flash {
-    animation-name: flashing;
-    animation-duration: 1s;
-    background-color: #110b0b57;
-    animation-iteration-count: infinite;
+  animation-name: flashing;
+  animation-duration: 1s;
+  background-color: #110b0b57;
+  animation-iteration-count: infinite;
 }
 
 .slow_flash {
-    animation-name: flashing;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
+  animation-name: flashing;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 .comingsoon-space {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 }
 .links {
-    text-align: center;
+  text-align: center;
 }
 .disclaimer {
-    font-style: italic;
+  font-style: italic;
 }
 
 #comingsoonBottomLogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* filter: brightness(99990%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* filter: brightness(99990%); */
 }
 @keyframes flashing {
-    0% {
-        filter: brightness(600%) hue-rotate(0deg);
-    }
+  0% {
+    filter: brightness(60%);
+  }
 
-    15% {
-        filter: brightness(1000%);
-    }
-    30% {
-        filter: brightness(90%);
-    }
-    40% {
-        filter: brightness(800%);
-    }
-    70% {
-        filter: brightness(100%) hue-rotate(-120deg);
-    }
-    80% {
-        filter: brightness(500%);
-    }
-    100% {
-        filter: brightness(80%);
-    }
+  15% {
+    filter: brightness(1000%);
+  }
+  30% {
+    filter: brightness(90%);
+  }
+  40% {
+    filter: brightness(80%);
+  }
+  70% {
+    filter: brightness(10%);
+  }
+  80% {
+    filter: brightness(50%);
+  }
+  100% {
+    filter: brightness(80%);
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    .comingsoonInfo p {
-        font-size: 16px;
-    }
-    .video {
-        width: 100vw;
-    }
+  .comingsoonInfo p {
+    font-size: 16px;
+  }
+  .video {
+    width: 100vw;
+  }
 
-    .description {
-        font-size: 70px;
-    }
+  .description {
+    font-size: 70px;
+  }
 }
