@@ -48,7 +48,7 @@ const artists7june: Artist = [
     //   "Never deserting pitch black territories, Cranya has approached a variety of different facets of obscure dance music in the last years. The decaying stimuli of modern society are the main inspiration for his characteristic perpetual gloomy sound. Fascinated by the vigilant induced state and energy recharging power of disruptive music, “Cranya” unfolds this force on the floor.",
   },
   {
-    name: "CAOSY",
+    name: "CHAOSY",
     // photo: "oliotronix.jpg",
     // link: "https://gleeetch.bandcamp.com/album/murrrlo",
     // description:
