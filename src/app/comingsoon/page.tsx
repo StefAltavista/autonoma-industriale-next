@@ -82,7 +82,7 @@ export default function ComingSoon() {
               <i style={{ fontSize: "18px" }}>free entry</i>
               <br></br>
               <br></br>
-              CONCERT STARTS AT 22:00<br></br>UNTILL VERY LATE<br></br>
+              CONCERT STARTS AT 21:00<br></br>UNTILL VERY LATE<br></br>
             </p>
             <h3>Køpi</h3>
           </div>
@@ -139,6 +139,14 @@ export default function ComingSoon() {
             className="comingsoonTextSection disclaimer"
             style={{ fontSize: "20px", lineHeight: "30px" }}
           >
+            <p>
+              Proceeds for Resistance<br></br>All the proceeds after artists
+              contribution and technical costs will go to benefit. Supporting
+              the scene has always been a core principle of our philosophy. PfR
+              allows us to support relevant social battles while keeping it
+              sustainable for artists and workers. All the people involved
+              agreed to reduce their fees to support the cause.
+            </p>
             <p>
               **The proceeds of this event will be donated to ELSC.support{" "}
               <br></br> The <strong>ELSC</strong> is the first and only
