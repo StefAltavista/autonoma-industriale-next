@@ -27,7 +27,9 @@
 }
 
 /* ----In the page---- */
-
+.space_full_window_h {
+  min-height: 100vh;
+}
 #comingsoon {
   width: 100vw;
   height: 100vh;
@@ -129,13 +131,13 @@
 }
 
 .artist {
-  border-top: 1px solid #b71f1f54;
+  border-top: 3px dotted #f9000054;
   /* padding-top: 10px; */
   /* margin-top: 40px; */
   /* margin-bottom: 50px; */
 }
 .artist p {
-  margin-top: 0%;
+  margin-top: 0px;
 }
 .artist h1 {
   font-size: 70px;
@@ -194,7 +196,23 @@
     filter: brightness(80%);
   }
 }
+.shake {
+  animation: shake 0.1s linear infinite;
+}
 
+@keyframes shake {
+  2%,
+  64% {
+    transform: translate(1px, 0) skew(3deg);
+  }
+  4%,
+  60% {
+    transform: translate(-10px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(2deg);
+  }
+}
 @media only screen and (max-width: 900px) {
   .comingsoonInfo p {
     font-size: 16px;
