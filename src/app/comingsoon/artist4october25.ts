@@ -20,7 +20,7 @@ const artists7june: Artist = [
   {
     name: "BITCH MATERIAL",
     // photo: "santacruz.jpg",
-    link: "https://www.youtube.com/watch?v=wlhbsyBsgzM&ab_channel=SANTACRUZ",
+    link: "https://www.instagram.com/b1tchmaterial",
     description: "Broken noise grinding punk teeth",
   },
   {
