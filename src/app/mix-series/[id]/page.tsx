@@ -56,8 +56,7 @@ export default function Mix({ params }: eventPageParams) {
                                         Five artists and collectives we like, respect, or take inspiration from — all bound by passion, authenticity, and a relentless dedication to the cause. Individualities and multiplicities with whom we’re glad to share visions, spaces, struggles, and long, beautifully messed-up parties.
                                     </p>
                                 </div>
-                                {/* <p className="mixDescription">{mix.description}</p> */}
-
+                                {!mix.dialog && <p className="mixDescription">{mix.description}</p>}
                                 <div className="dialogLabel">
                                     <span className="dialogSymbol">[</span>
                                     <span className="dialogChar"> d</span>
