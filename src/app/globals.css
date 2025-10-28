@@ -1,66 +1,72 @@
 * {
-    box-sizing: border-box;
-    font-family: "Courier New", Courier, monospace;
-    -ms-overflow-style: none; /* hide scrollbar IE and Edge */
-    scrollbar-width: none; /* hide scrollbar Firefox */
-    /* color: white; */
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  -ms-overflow-style: none; /* hide scrollbar IE and Edge */
+  scrollbar-width: none; /* hide scrollbar Firefox */
+  /* color: white; */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 .error {
-    background-color: red;
-    color: black;
+  background-color: red;
+  color: black;
 }
 body {
-    background-color: rgb(0, 0, 0);
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
 }
 #pagebody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #main {
-    position: absolute;
-    margin: 0;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: scroll;
-    z-index: 1;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 1;
 }
 
 a {
-    color: red;
-    text-decoration: none;
+  color: red;
+  text-decoration: none;
 }
 
 a:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 button {
-    background-color: red;
-    border: none;
-    cursor: pointer;
-    font-size: 15px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 button:hover {
-    color: rgb(255, 0, 0);
-    background-color: black;
+  color: rgb(255, 0, 0);
+  background-color: black;
 }
 
 #pageBody {
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 40px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px !important;
+  line-height: 30px;
 }
