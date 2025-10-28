@@ -1,10 +1,59 @@
+/* Highlighted style for mix description */
+.mixDescription {
+  font-size: 1.13em;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin: 1.1em 0 1.2em 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  background: rgba(234,255,0,0.07);
+  border-right: 3px solid #eaff00;
+  padding: 0.7em 1.2em 0.7em 1em;
+  border-radius: 6px;
+}
+/* Intro box for repeated intro text */
+.introBox {
+  background: rgba(30, 30, 30, 0.7);
+  border-left: 5px solid #eaff00;
+  padding: 1.2em 1.5em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.12);
+}
+.introBox p {
+  font-size: 0.98em;
+  color: #eaff00;
+  font-style: italic;
+}
+
+/* Dialog label styling */
+.dialogLabel {
+  font-size: 1.08em;
+  font-family: inherit;
+  margin: 0.2em 0 0.7em 0;
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
+  justify-content: center;
+  text-align: center;
+}
+.dialogSymbol {
+  color: #eaff00;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.dialogChar {
+  color: #fff;
+  font-style: normal;
+}
 .dialogEntry {
   margin-bottom: 1.2em;
 }
-.dialogEntry:nth-child(odd) {
+.dialogEntry:nth-child(even) {
   color: #fff;
 }
-.dialogEntry:nth-child(even) {
+.dialogEntry:nth-child(odd) {
   color: #eeff31;
 }
 /* Default: desktop hides mobile image, mobile shows it at bottom */
@@ -206,13 +255,13 @@ h1, h2 {
     display: none;
   }
   .soundcloudPlayer {
-    width: 95vw;
+    width: 97vw;
     min-width: 0;
-    max-width: 95vw;
+    max-width: 97vw;
   }
   .soundcloudPlayer iframe {
-    width: 95%;
+    width: 97%;
     min-width: 0;
-    max-width: 95vw;
+    max-width: 97vw;
   }
 }
