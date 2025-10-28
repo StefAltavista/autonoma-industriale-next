@@ -1,0 +1,6 @@
+.mixSeriesElement {
+    color: "white";
+}   
+.mixSeriesElement:hover {
+    color: "red";
+}

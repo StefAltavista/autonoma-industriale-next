@@ -33,7 +33,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={inter.className}>
                 <GlobalProvider>
-                    <Header />
+                    {/* <Header /> */}
                     <div id="pagebody">{children}</div>
                 </GlobalProvider>
             </body>
