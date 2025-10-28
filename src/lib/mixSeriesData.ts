@@ -4,20 +4,21 @@ type Dialog = {
 };
 export type MixSeriesDataType = {
   id: Number;
-  name: String;
-  artist: String;
-  artistLink: String;
-  coverImage: String;
-  images?: String[];
-  soundcloudLink: String;
-  description: String;
-  isDialog: boolean;
+  name: string;
+  note?: string;
+  artist: string;
+  artistLink: string;
+  coverImage: string;
+  images?: string[];
+  soundcloudLink: string;
+  description: string;
   dialog?: Dialog[];
 };
 const mixSeriesData: MixSeriesDataType[] = [
   {
     id: 18,
     name: "Mix Series XVIII [dia/log] - expediitn & De Blauwe Aanslag",
+    note: "𝙇𝙞𝙫𝙚 𝙧𝙚𝙘𝙤𝙧𝙙𝙞𝙣𝙜 𝙛𝙧𝙤𝙢 𝙇𝙖𝙪𝙨𝙘𝙝𝙖𝙣𝙜𝙧𝙞𝙛𝙛, 𝘽𝙚𝙧𝙡𝙞𝙣 – 𝙈𝙖𝙮 1𝙨𝙩, 2025",
     artist: "expediitn",
     artistLink: "linktr.ee/expediitn",
     coverImage: "/images/mixSeries/18/expediitn_coverImage.jpg",
@@ -25,8 +26,7 @@ const mixSeriesData: MixSeriesDataType[] = [
     soundcloudLink:
       "https://soundcloud.com/autonoma-industriale/expediitn?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&si=8ca3cbdb046346d984a2eb4c7d1a013a",
     description:
-      "𝐀𝐈-𝐌𝐢𝐱 𝐒𝐞𝐫𝐢𝐞𝐬 𝐗𝐕𝐈𝐈𝐈 [ 𝐝𝐢𝐚 / 𝐥𝐨𝐠 ] – 𝐞𝐱𝐩𝐞𝐝𝐢𝐢𝐭𝐧 & 𝐃𝐞 𝐁𝐥𝐚𝐮𝐰𝐞 𝐀𝐚𝐧𝐬𝐥𝐚𝐠 𝙇𝙞𝙫𝙚 𝙧𝙚𝙘𝙤𝙧𝙙𝙞𝙣𝙜 𝙛𝙧𝙤𝙢 𝙇𝙖𝙪𝙨𝙘𝙝𝙖𝙣𝙜𝙧𝙞𝙛𝙛, 𝘽𝙚𝙧𝙡𝙞𝙣 – 𝙈𝙖𝙮 1𝙨𝙩, 2025 Listen to the live recording of expediitn at Lauschangriff on our Soundcloud and read our interview to know more about them, DBA and what link them to Bunker Records, Guy Tavarez and the Acid Planets parties in the squats of Den Haag.",
-    isDialog: true,
+      "Listen to the live recording of expediitn at Lauschangriff on our Soundcloud and read our interview to know more about them, DBA and what link them to Bunker Records, Guy Tavarez and the Acid Planets parties in the squats of Den Haag.",
     dialog: [
       {
         talker: "A\\I",
