@@ -5,9 +5,12 @@ type Dialog = {
 export type MixSeriesDataType = {
   id: string;
   name: string;
+  edition: string;
   note?: string;
   artist: string;
   artistLink?: string;
+  date: string;
+  artwork: string;
   coverImage: string;
   images?: string[];
   soundcloudLink: string;
@@ -18,8 +21,11 @@ export type MixSeriesDataType = {
 const mixSeriesData: MixSeriesDataType[] = [
   {
     id: "XX",
+    edition: "[dia/log]",
     name: "Mix Series XX [dia/log] - Cocktail Twinks & HIGH",
     artist: "Cocktail Twinks",
+    date: "October 2025",
+    artwork: "Bece",
     coverImage: "/images/mixSeries/20/cocktail_coverImage.jpg",
     images: undefined,
     soundcloudLink:
@@ -95,8 +101,11 @@ Tracklist
   },
   {
     id: "XIX",
+    edition: "[dia/log]",
     name: "Mix Series XIX [dia/log] - Pris V & Jinx",
     artist: "Pris V",
+    date: "September 2025",
+    artwork: "Bece",
     coverImage: "/images/mixSeries/19/prisV_coverImage.jpg",
     images: undefined,
     soundcloudLink:
@@ -151,10 +160,13 @@ Listen to her very personal mix of oddities and curved grooves and read more abo
   },
   {
     id: "XVIII",
+    edition: "[dia/log]",
     name: "Mix Series XVIII [dia/log] - expediitn & De Blauwe Aanslag",
     note: "𝙇𝙞𝙫𝙚 𝙧𝙚𝙘𝙤𝙧𝙙𝙞𝙣𝙜 𝙛𝙧𝙤𝙢 𝙇𝙖𝙪𝙨𝙘𝙝𝙖𝙣𝙜𝙧𝙞𝙛𝙛, 𝘽𝙚𝙧𝙡𝙞𝙣 – 𝙈𝙖𝙮 1𝙨𝙩, 2025",
     artist: "expediitn",
     artistLink: "linktr.ee/expediitn",
+    date: "August 2025",
+    artwork: "Bece",
     coverImage: "/images/mixSeries/18/expediitn_coverImage.jpg",
     images: undefined,
     soundcloudLink:
@@ -227,44 +239,55 @@ Listen to her very personal mix of oddities and curved grooves and read more abo
         message:
           "Regarding expediitn, I should clarify that it’s not a project but simply a creative pseudonym. I plan to keep it as my DJ alias and possibly release music under this name without a strict concept — not in a negative sense, just less conceptual. I’m also thinking of launching at least two other creative projects with clear ideas and defined musical boundaries. As for DBA, we’re planning a joint event with artists who once performed at the original squat, along with several other events — not only in Berlin. We already have material for future releases, and our plans include developing the platform further: starting our own podcast, releasing on vinyl for the first time (so far, we’ve only worked with cassettes), and more.",
       },
-
     ],
   },
   {
     id: "XVII",
+    edition: "Malebolge",
     name: "Mix Series XVII - Fuerza Kontraria",
     note: "Live recorded in Ziegrastrasse 11, approx. thirty minutes after midnight the 16/6 at Autonoma Industriale",
     artist: "Fuerza Kontraria",
+    date: "1st August 2023",
+    artwork: "Still from L’Inferno (1911) - Edit SamLTV",
     coverImage: "/images/mixSeries/17/fuerzaK.png",
     images: undefined,
     soundcloudLink:
-      'https://soundcloud.com/autonoma-industriale/mix-series-fuerzakontraria?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1579752014&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+      "https://soundcloud.com/autonoma-industriale/mix-series-fuerzakontraria?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1579752014&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `Born in Santiago de Chile and based in Berlin, Fuerza Kontraria is the maniacal mind behind Kontralamkina, record label & channel focused on communication and exploration around magic.
                   Already part of the hometown industrial forces, Fuerza Kontraria brought to Berlin an obscure tradition that fuse sinisterly evocative noises with quadratic mind-tricks and industrial landscapes.
                   A new cult of the occult we are very happy to cross the paths with.`,
   },
   {
     id: "XVI",
+    edition: "Malebolge",
     name: "Mix Series XVI - GHKC",
     artist: "GHKC",
+    date: "30th November 2022",
+    artwork: "Still from L’Inferno (1911) - Edit SamLTV",
     coverImage: "/images/mixSeries/16/ghkc.png",
     images: undefined,
     soundcloudLink:
-      'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-xvi-ghkc?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1393499950&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-xvi-ghkc?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1393499950&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `Buenos Aires to Berlin GHKC delivers the sixteenth episode of our MIX SERIES with an hour long rolling mixture of noisy industrial textures, dynamic rhythms and melodic pads.
        Dark and bright alternation on wax for bodily pleasure and relief of the mind.`,
   },
   {
     id: "XV",
+    edition: "Malebolge",
     name: "Mix Series XV - MazeDK",
     artist: "MazeDK",
+    date: "3rd October 2022",
+    artwork: "Still from L’Inferno (1911) - Edit SamLTV",
     coverImage: "/images/mixSeries/15/MazeDK.png",
     images: undefined,
     soundcloudLink:
-      'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-xiv-mazedk?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1355917426&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-xiv-mazedk?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1355917426&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `MazeDK is a queer Polish DJ living in Berlin. She grew up listening to Underground Punk, EBM and Industrial.
         This musical upbringing heavily influenced the type of Techno she plays – fast, hard, relentless. Yet her sets centre on emotional messages and in each of them she creates a dark and exciting journey to follow.
 
@@ -290,18 +313,22 @@ Listen to her very personal mix of oddities and curved grooves and read more abo
   },
   {
     id: "XIV",
+    edition: "Malebolge",
     name: "Mix Series XIV - Hålbå",
     artist: "Hålbå",
+    date: "12th July 2022",
+    artwork: "",
     coverImage: "/images/mixSeries/14/Hålbå.png",
     images: undefined,
     soundcloudLink:
-      'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-iv-halba?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1303766548&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-iv-halba?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1303766548&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `Love and hate, peace and war are sung in a sequence of futuristic drones that recall an orgasmic stupor.
 
         Alessio is not only a great producers and expert live performer: his sound research goes beyond the classic standards with which we are used to confronting ourselves with, bringing his awareness and his passion towards the sound mastery that many see, but few reach.
 
-        Here follows the tracklist :
+        Tracklist :
 
         Natalia Beylis - Handwriting Analysis
         Dave Phillips - To Death We All Go
@@ -330,91 +357,132 @@ Listen to her very personal mix of oddities and curved grooves and read more abo
   },
   {
     id: "XIII",
+    edition: "Malebolge",
     name: "Mix Series XIII - EYES GONE",
     artist: "EYES GONE",
+    date: "2nd February 2022",
+    artwork: "Still from L’Inferno (1911) - Edit SamLTV",
     coverImage: "/images/mixSeries/13/EYESGONE.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-xiii-eyes-gone?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1208349982&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-xiii-eyes-gone?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1208349982&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `The 13th Mix series of AI comes from EYES GONE, who offers an hour of sound exploration outside the usual schemes and habits related to the purely techno world. Sweetness and melancholy come together in a unison of sounds and decadent rhythms, like at the end of a pleasant life experience.
 
       A minimalist side emerges from the artist, who is able to propose his most hidden and unexpected side, which fades between esotericism and invocations to times that escape the rules of our industrial universe.`,
   },
   {
     id: "XII",
+    edition: "Children of the Red",
     name: "Mix Series XII - About:Kaos & Ecce",
     artist: "About:Kaos & Ecce",
+    date: "28th December 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/12/kaos.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-xii-aboutkaos-ecce?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1186215526&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-xii-aboutkaos-ecce?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1186215526&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `12/12. @Aboutkaos & Ecce closes the first cycle of our Mix Series with a front-left set of hard hitting techno and fast forward breaks. 80 minutes of rhythm and rebellion recorded and home delivered with expertise in the last day of the year, for your self-enjoyment or collective enhancement purpose.`,
   },
   {
     id: "XI",
+    edition: "Children of the Red",
     name: "Mix Series XI - SUNDS",
     artist: "SUNDS",
+    date: "29th November 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/11/SUNDS.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-xi-sunds?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1168878640&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-xi-sunds?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1168878640&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `The 11th instalment of this year is mixed by our co founder @SUNDSyndrome, expert musician and polystumentist.
 
       Dark drones and obscure texture characterise the first part of his set, builded with industrial elements and a rhythmic hammer approach, revealing the punk influences that brings him to construct his own sound.
 
-      Industrial techno shivers are the basic of this emotional mix, that sweats passion like a body inflamed by extrasensory pleasures.
-
-      Expect some good news from this boy in the next days, as he will increase our label's collection.`,
+      Industrial techno shivers are the basic of this emotional mix, that sweats passion like a body inflamed by extrasensory pleasures.`,
   },
   {
     id: "X",
+    edition: "Children of the Red",
     name: "Mix Series X - NU YORCK",
     artist: "NU YORCK",
+    date: "31st October 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/10/NUYORCK.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-x-nu-yorck?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1151024935&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-x-nu-yorck?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1151024935&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `Vol. X of our podcasts serie is dispatched by one third of Autonoma Industriale’s foundation. Nu Yorck behind the decks presenting an abysmal futuristic Techno set. A deep dive into telluric rumbles and manic grooves.
 Within this fine and unique selection you will also hear an unreleased forthcoming track from the label catalogue.`,
   },
   {
     id: "IX",
+    edition: "Children of the Red",
     name: "Mix Series IX - Nacasat + Desert Drone",
     artist: "Nacasat + Desert Drone",
+    date: "28th September 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/9/Nacasat.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-ix?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1132391293&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
-    description: "Our ninth instalment in the Autonoma Industriale mix series comes from the established collaboration between one of our founding member (Desert Drone / Ex Controllata Enichem / Anxiety Pattern Generator) and a long time friend and collaborator, Nacasat. The duo regularly delivers outstanding industrial techno around Berlin, always live and improvised. A true Autonoma Industriale landmark.",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-ix?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1132391293&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
+    description:
+      "Our ninth instalment in the Autonoma Industriale mix series comes from the established collaboration between one of our founding member (Desert Drone / Ex Controllata Enichem / Anxiety Pattern Generator) and a long time friend and collaborator, Nacasat. The duo regularly delivers outstanding industrial techno around Berlin, always live and improvised. A true Autonoma Industriale landmark.",
   },
   {
     id: "VIII",
+    edition: "Children of the Red",
     name: "Mix Series VIII - BPF",
     artist: "BPF",
+    date: "31st August 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/8/BPF.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-viii-bpf?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1116524116&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
-    description: "The 8th Volume of our Mix series contains excerpts from BPF sets on Radio Banda Larga (Torino) and Atelier de l'étoile (Besançon). Recorded by using solely physical formats (CD, vinyl and tapes) which are found, given for free and/or exchanged at DIY shows.",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-viii-bpf?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1116524116&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
+    description:
+      "The 8th Volume of our Mix series contains excerpts from BPF sets on Radio Banda Larga (Torino) and Atelier de l'étoile (Besançon). Recorded by using solely physical formats (CD, vinyl and tapes) which are found, given for free and/or exchanged at DIY shows.",
   },
   {
     id: "VII",
+    edition: "Children of the Red",
     name: "Mix Series VII - DJ Control Delete",
     artist: "DJ Control Delete",
+    date: "29th July 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/7/DJControlDelete.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-vii-dj-control-delete-set-ai-190621?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1096224205&color=%23ff5500&inverse=false&auto_play=true&show_user=tr",
-    description: "Tom Schwarz is the seventh artist to participate in our Mix series, recorded live at Autonoma Industriale 190621, Extreme, intense, Control Delete wraps body and mind in one of the most beautiful and overwhelming sets played in our events. He is not just a DJ, but an expert musical explorer able to Capture musical moments within an unstable system that keeps collapsing on it self. The livesets with the Sinister Sveta project are exceptional, in a hypnotic evolution of noises and loops, sealed by ancient and disturbing voices.",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-vii-dj-control-delete-set-ai-190621?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1096224205&color=%23ff5500&inverse=true&auto_play=true&show_user=tr",
+    description:
+      "Tom Schwarz is the seventh artist to participate in our Mix series, recorded live at Autonoma Industriale 190621, Extreme, intense, Control Delete wraps body and mind in one of the most beautiful and overwhelming sets played in our events. He is not just a DJ, but an expert musical explorer able to Capture musical moments within an unstable system that keeps collapsing on it self. The livesets with the Sinister Sveta project are exceptional, in a hypnotic evolution of noises and loops, sealed by ancient and disturbing voices.",
   },
   {
     id: "VI",
+    edition: "Children of the Red",
     name: "Mix Series VI - SAMIN SON",
     artist: "SAMIN SON",
+    date: "22nd June 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/6/SAMINSON.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-vi-samin-son?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1073830891&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-vi-samin-son?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1073830891&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `Skate In Paradise Justin Hugh Williams
 Presented by 93n3r4tør(11111111111)saminsonstudioeditallnona
 
@@ -447,24 +515,34 @@ Atmosphere - Joy Division - Atmosphere - Oct 1980 - Rock - New Wave, Post-Punk -
   },
   {
     id: "V",
+    edition: "Children of the Red",
     name: "Mix Series V - Bianco Negativo",
     artist: "Bianco Negativo",
+    date: "28th May 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/5/BiancoNegativo.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-v-bianco-negativo?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1057258132&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-v-bianco-negativo?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1057258132&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `A selection of unreleased, unnamed, obscure tracks ripped of old tapes from the likes of Bianco Negativo.
 Founders of Marguerite Records and Tocca il futuro, Davide and Claudio already accomplished the support of great artists like Reka, Intergalactic Gary, Alessandro Adriani, Pasiphae and many more.
 Their monthly show on Rinse France is a fixture for New Beat, Industrial, Post Punk and Synth-Pop passionates, with regular guests such as Josh Cheon, Borusiade, Robert Bergman and Violet Poison.`,
   },
   {
     id: "IV",
+    edition: "Children of the Red",
     name: "Mix Series IV - NEKROBOT",
     artist: "NEKROBOT",
+    date: "24th April 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/4/NEKROBOT.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-iv-nekrobot?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1035799510&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-iv-nekrobot?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1035799510&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `The umbral and dusky character Nekrobot takes the spot in our April Mix Series. The notorious Berlin based experimental musician and DJ from Athens, delivers a delirious and stunning harsh Podcast, a journey into a metal factory. As he describes it: An expression of disorder through sounds.
       Proper, "according to the actual situation"
 
@@ -485,46 +563,53 @@ Their monthly show on Rinse France is a fixture for New Beat, Industrial, Post P
   },
   {
     id: "III",
+    edition: "Children of the Red",
     name: "Mix Series III - NUISANCE777",
     artist: "NUISANCE777",
+    date: "31st March 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/3/NUISANCE777.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-iii-nuisance777?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1019731885&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-iii-nuisance777?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1019731885&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
     description: `A dystopic, 90 minutes excursion in the post-rave era, where the Machine gained the control, the human is persecuted and the last, abandoned factory rise as the church of a new, undisputed emperor of Techno.
 The third episode of Autonoma Industriale Mix Series comes from NUISANCE777, the Israhell/Berlin based DJ and producer part of LNS Soundterror disorganization.`,
   },
   {
     id: "II",
+    edition: "Children of the Red",
     name: "Mix Series II - BIONIHIL",
     artist: "BIONIHIL",
+    date: "27th February 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/2/BIONIHIL.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-bionihil?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A994349311&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
-    description: `333 plays333
-View all likes19
-View all reposts3
-Autonoma Industriale
-630 followers
-630
-99 tracks
-99
-Mix of #Bionihil's unreleased home recordings: from the recordings in Chemnitz (karl-marx-stadt) in 2007 to the ones made in Valencia and in the mountains, to Berlin phase with unreleased AMOR track, flamenco collaboration with Alberto Santacruz (DIY1990, ALTAR) adding a vocal improvisation on traditional Belarusian folklore following recitation of the poem by Belarusian poet Danuta Bichel-Zahnietava. Ending with pandemic classic guitar exploration.
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-bionihil?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A994349311&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
+    description: `Mix of #Bionihil's unreleased home recordings: from the recordings in Chemnitz (karl-marx-stadt) in 2007 to the ones made in Valencia and in the mountains, to Berlin phase with unreleased AMOR track, flamenco collaboration with Alberto Santacruz (DIY1990, ALTAR) adding a vocal improvisation on traditional Belarusian folklore following recitation of the poem by Belarusian poet Danuta Bichel-Zahnietava. Ending with pandemic classic guitar exploration.
 
 "I wanted to give space for a presence of Belarusian language to make attention on the current political situation in Belarus where government is shooting down the peoples voices." Bionihil`,
   },
   {
     id: "I",
+    edition: "Children of the Red",
     name: "Mix Series I - HAUSVERBOTI",
     artist: "HAUSVERBOTI",
+    date: "21st January 2021",
+    artwork: "Untitled - Cat Raia",
     coverImage: "/images/mixSeries/1/HAUSVERBOTI.png",
     images: undefined,
-    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-podcast-vol-i-hausverboti?in=autonoma-industriale/sets/mix-series',
-    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A969822115&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
-    description: `First Mix Series of Autonoma Industriale, performed by @hausverboti
+    soundcloudLink:
+      "https://soundcloud.com/autonoma-industriale/autonoma-industriale-podcast-vol-i-hausverboti?in=autonoma-industriale/sets/mix-series",
+    soundcloudEmbed:
+      "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A969822115&color=%23ff5500&inverse=true&auto_play=true&show_user=true",
+    description: `First Mix Series of Autonoma Industriale by Hausverboti
 
-Artwork: Cat Eliz
+Artwork: Cat Raia
 
 Track list:
 
