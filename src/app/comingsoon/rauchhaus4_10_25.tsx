@@ -25,7 +25,7 @@ export default function ComingSoon() {
   return (
     <div>
       {!enter ? (
-        <div id="comingsoon-intro">
+        <div id="comingsoon-intro" onClick={() => enterPage()}>
           <Image
             src={logoAutonoma}
             width={100}
@@ -33,22 +33,7 @@ export default function ComingSoon() {
             alt="logoAutonoma"
             priority={true}
           />
-          <h1>6TH DECEMBER 2025</h1>
-          <div
-            className="comingsoonTextSection links"
-            id="subscribe_link"
-            style={{ fontSize: "30px", textAlign: "center" }}
-          >
-            <p style={{ fontSize: "30px", textAlign: "center" }}>
-              Join the mailing list, or the{" "}
-              <Link href="https://t.me/autonomaindustriale" target="blank">
-                Telegram
-              </Link>{" "}
-              channel
-              <br></br>for more info regarding our next event
-            </p>
-            <Subscribe />
-          </div>
+          <h1>E N T E R</h1>
         </div>
       ) : null}
       <div className={enter ? "open" : "close"}>

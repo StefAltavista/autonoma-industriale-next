@@ -1,82 +1,82 @@
 #header {
-    user-select: none;
-    width: 100vw;
-    height: 100px;
-    margin: 0;
-    background-color: rgba(0, 0, 0);
-    display: flex;
-    padding: 20px;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid red;
-    z-index: -0;
+  user-select: none;
+  width: 100vw;
+  height: 100px;
+  margin: 0;
+  background-color: rgba(0, 0, 0);
+  display: flex;
+  padding: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid red;
+  z-index: -0;
 }
 #shortBorder {
-    top: 0;
-    left: 0;
-    margin: 0px;
-    position: absolute;
-    width: 190px;
-    height: 100px;
-    z-index: 0;
-    border-bottom: 1px solid rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  margin: 0px;
+  position: absolute;
+  width: 190px;
+  height: 100px;
+  z-index: 0;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 #toggle-menu {
-    margin-left: auto;
-    margin-right: 30px;
-    width: 28px;
-    height: 55px;
-    padding-left: 4px;
-    padding-right: 4px;
-    font-size: 19px;
-    align-self: baseline;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px;
-    cursor: pointer;
+  margin-left: auto;
+  margin-right: 30px;
+  width: 28px;
+  height: 55px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 19px;
+  align-self: baseline;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+  cursor: pointer;
 }
 
 #toggle-menu:hover {
-    background-color: red;
-    color: rgb(255, 255, 255);
+  background-color: red;
+  color: rgb(255, 255, 255);
 }
 .menuOff {
-    color: #b7201f;
+  color: #b7201f;
 }
 .menuOn {
-    background-color: red;
-    color: rgb(255, 255, 255);
+  background-color: red;
+  color: rgb(255, 255, 255);
 }
 
 #header-title {
-    align-self: baseline;
-    letter-spacing: 2px;
-    font-family: "Josefin Sans", sans-serif;
-    color: #b7201f;
-    padding: 5px;
-    border: 1px solid #b7201f;
+  align-self: baseline;
+  letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #b7201f;
+  padding: 5px;
+  border: 1px solid #b7201f;
 }
 #header a img {
-    position: relative;
-    width: 150px;
-    height: 125px;
-    transition: 700ms;
-    margin-right: 20px;
+  position: relative;
+  width: 150px;
+  height: 125px;
+  transition: 700ms;
+  margin-right: 20px;
 }
 
 #header img:hover {
-    filter: brightness(10);
-    background-color: rgba(255, 255, 255, 0);
+  filter: brightness(10);
+  background-color: rgba(255, 255, 255, 0);
 }
 @media only screen and (max-width: 700px) {
-    #header a img {
-        width: 100px;
-        height: 84px;
-    }
-    #header-title {
-        font-size: 15px;
-    }
-    #shortBorder {
-        width: 140px;
-    }
+  #header a img {
+    width: 100px;
+    height: 84px;
+  }
+  #header-title {
+    font-size: 15px;
+  }
+  #shortBorder {
+    width: 140px;
+  }
 }
