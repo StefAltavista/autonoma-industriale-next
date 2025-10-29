@@ -12,17 +12,13 @@ type eventPageParams = {
 };
 
 export default function Mix({ params }: eventPageParams) {
-  const mix = MixSeriesData.find((mix) => mix.id === Number(params.id));
+  const mix = MixSeriesData.find(
+    (mix) => mix.id.toLocaleLowerCase() === params.id
+  );
   const [openImage, setOpenImage] = useState(false);
   if (!mix) notFound();
   const newLineOnDot = (paragraph: string) =>
     paragraph.replace(/\. (?=[A-Z])/g, ".\n\n");
-
-  // const scSrc = mix.soundcloudLink
-  //   ? `https://w.soundcloud.com/player/?url=${encodeURIComponent(
-  //       mix.soundcloudLink
-  //     )}&color=%23000000&auto_play=true&hide_related=true&show_comments=true&show_user=true&show_reposts=false&visual=true&liking=false&playlist=true`
-  //   : null;
 
   return (
     <>

@@ -3,7 +3,7 @@ type Dialog = {
   message: string;
 };
 export type MixSeriesDataType = {
-  id: Number;
+  id: string;
   name: string;
   note?: string;
   artist: string;
@@ -17,7 +17,7 @@ export type MixSeriesDataType = {
 };
 const mixSeriesData: MixSeriesDataType[] = [
   {
-    id: 20,
+    id: "xx",
     name: "Mix Series XX [dia/log] - Cocktail Twinks & HIGH",
     artist: "Cocktail Twinks",
     coverImage: "/images/mixSeries/20/cocktail_coverImage.jpg",
@@ -94,7 +94,7 @@ Tracklist
     ],
   },
   {
-    id: 19,
+    id: "xix",
     name: "Mix Series XIX [dia/log] - Pris V & Jinx",
     artist: "Pris V",
     coverImage: "/images/mixSeries/19/prisV_coverImage.jpg",
@@ -150,7 +150,7 @@ Listen to her very personal mix of oddities and curved grooves and read more abo
     ],
   },
   {
-    id: 18,
+    id: "xviii",
     name: "Mix Series XVIII [dia/log] - expediitn & De Blauwe Aanslag",
     note: "𝙇𝙞𝙫𝙚 𝙧𝙚𝙘𝙤𝙧𝙙𝙞𝙣𝙜 𝙛𝙧𝙤𝙢 𝙇𝙖𝙪𝙨𝙘𝙝𝙖𝙣𝙜𝙧𝙞𝙛𝙛, 𝘽𝙚𝙧𝙡𝙞𝙣 – 𝙈𝙖𝙮 1𝙨𝙩, 2025",
     artist: "expediitn",
