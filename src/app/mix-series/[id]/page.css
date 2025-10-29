@@ -94,7 +94,7 @@
   background-repeat: no-repeat;
   max-height: 70vh !important;
   overflow: hidden;
-  width: 80%;
+  width: 90%;
   position: relative;
   z-index: 0;
 }
@@ -184,6 +184,7 @@
   #mixPage {
     overflow: hidden !important;
     text-align: justify;
+    width: 100%;
   }
   .rowContainer {
     flex-direction: column;
@@ -198,16 +199,13 @@
   }
   .mixCoverImage-mobile {
     display: block !important;
-    width: 70% !important;
     margin: 1.5rem auto 0 auto;
   }
   .mixCoverImage-desktop {
     display: none !important;
   }
   .mixCoverImage {
-    width: 95vw;
-    max-width: 98vw;
-    min-width: 0;
+    width: 100%
   }
   .mixTextContent {
     width: 85%;
