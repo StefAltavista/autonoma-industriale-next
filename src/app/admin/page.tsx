@@ -11,7 +11,6 @@ import ModalView from "../../components/ModalView";
 import Mailinglist from "../../components/admin/Mailinglist";
 import NewEvent from "../../components/admin/NewEvent";
 import EditEvent from "../../components/admin/EditEvent";
-import AddToLabel from "../../components/admin/AddToLabel";
 import UploadToArchive from "../../components/admin/UploadToArchive";
 
 export default function Admin() {
@@ -57,7 +56,7 @@ export default function Admin() {
                         ))}
                     </div>
                     {toggle && (
-                        <ModalView closeModal={() => setToggle(null)}>
+                        <ModalView isOpen={!!toggle} closeModal={() => setToggle(null)}>
                             {openModal(toggle)}
                         </ModalView>
                     )}

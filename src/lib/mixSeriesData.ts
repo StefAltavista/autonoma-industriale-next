@@ -17,7 +17,7 @@ export type MixSeriesDataType = {
 };
 const mixSeriesData: MixSeriesDataType[] = [
   {
-    id: "xx",
+    id: "XX",
     name: "Mix Series XX [dia/log] - Cocktail Twinks & HIGH",
     artist: "Cocktail Twinks",
     coverImage: "/images/mixSeries/20/cocktail_coverImage.jpg",
@@ -94,7 +94,7 @@ Tracklist
     ],
   },
   {
-    id: "xix",
+    id: "XIX",
     name: "Mix Series XIX [dia/log] - Pris V & Jinx",
     artist: "Pris V",
     coverImage: "/images/mixSeries/19/prisV_coverImage.jpg",
@@ -150,7 +150,7 @@ Listen to her very personal mix of oddities and curved grooves and read more abo
     ],
   },
   {
-    id: "xviii",
+    id: "XVIII",
     name: "Mix Series XVIII [dia/log] - expediitn & De Blauwe Aanslag",
     note: "𝙇𝙞𝙫𝙚 𝙧𝙚𝙘𝙤𝙧𝙙𝙞𝙣𝙜 𝙛𝙧𝙤𝙢 𝙇𝙖𝙪𝙨𝙘𝙝𝙖𝙣𝙜𝙧𝙞𝙛𝙛, 𝘽𝙚𝙧𝙡𝙞𝙣 – 𝙈𝙖𝙮 1𝙨𝙩, 2025",
     artist: "expediitn",
@@ -227,7 +227,328 @@ Listen to her very personal mix of oddities and curved grooves and read more abo
         message:
           "Regarding expediitn, I should clarify that it’s not a project but simply a creative pseudonym. I plan to keep it as my DJ alias and possibly release music under this name without a strict concept — not in a negative sense, just less conceptual. I’m also thinking of launching at least two other creative projects with clear ideas and defined musical boundaries. As for DBA, we’re planning a joint event with artists who once performed at the original squat, along with several other events — not only in Berlin. We already have material for future releases, and our plans include developing the platform further: starting our own podcast, releasing on vinyl for the first time (so far, we’ve only worked with cassettes), and more.",
       },
+
     ],
+  },
+  {
+    id: "XVII",
+    name: "Mix Series XVII - Fuerza Kontraria",
+    note: "Live recorded in Ziegrastrasse 11, approx. thirty minutes after midnight the 16/6 at Autonoma Industriale",
+    artist: "Fuerza Kontraria",
+    coverImage: "/images/mixSeries/17/fuerzaK.png",
+    images: undefined,
+    soundcloudLink:
+      'https://soundcloud.com/autonoma-industriale/mix-series-fuerzakontraria?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1579752014&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `Born in Santiago de Chile and based in Berlin, Fuerza Kontraria is the maniacal mind behind Kontralamkina, record label & channel focused on communication and exploration around magic.
+                  Already part of the hometown industrial forces, Fuerza Kontraria brought to Berlin an obscure tradition that fuse sinisterly evocative noises with quadratic mind-tricks and industrial landscapes.
+                  A new cult of the occult we are very happy to cross the paths with.`,
+  },
+  {
+    id: "XVI",
+    name: "Mix Series XVI - GHKC",
+    artist: "GHKC",
+    coverImage: "/images/mixSeries/16/ghkc.png",
+    images: undefined,
+    soundcloudLink:
+      'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-xvi-ghkc?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1393499950&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `Buenos Aires to Berlin GHKC delivers the sixteenth episode of our MIX SERIES with an hour long rolling mixture of noisy industrial textures, dynamic rhythms and melodic pads.
+       Dark and bright alternation on wax for bodily pleasure and relief of the mind.`,
+  },
+  {
+    id: "XV",
+    name: "Mix Series XV - MazeDK",
+    artist: "MazeDK",
+    coverImage: "/images/mixSeries/15/MazeDK.png",
+    images: undefined,
+    soundcloudLink:
+      'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-xiv-mazedk?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1355917426&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `MazeDK is a queer Polish DJ living in Berlin. She grew up listening to Underground Punk, EBM and Industrial.
+        This musical upbringing heavily influenced the type of Techno she plays – fast, hard, relentless. Yet her sets centre on emotional messages and in each of them she creates a dark and exciting journey to follow.
+
+        Track list:
+
+        3SBAT - The Angel Of The Abyss [Soma Records]
+        EXIX - Restwut [Self Release]
+        Endlec - Unleash The Beast [Renegade Methodz]
+        Slam + Rebekah - Believe In The Night [Soma Records]
+        Anthro - Falcon [WRONGNOTES Records]
+        EYRIS - Double Clutchin' [Green Fetish Records]
+        Wallis - You Will Wish You Were Never Born [Jell Records]
+        Inhalt Der Nacht & Echoes Of October - Fleischleben [Lebendig]
+        Panternoise - Shuffle The Pandora (Crystal Geometry Remix) [Self-Release]
+        Termination_800 - Mauler [Crave Tapes]
+        Moth - My Generation Won't Listen Yours Anymore [Self-Release]
+        Umwelt - Codebreaker [Monnom Black]
+        HRD.303 - Feel My Body [Vast Perception]
+        Ben Techy - Hostile Reference [WRONGNOTES Records]
+        Arkhan - Nightstalker [Vast Perception]
+        Laren Born As Rebels [Deestricted]
+        VIVAY - 528hZ (RZVX remix) [PURE HATE 000]`,
+  },
+  {
+    id: "XIV",
+    name: "Mix Series XIV - Hålbå",
+    artist: "Hålbå",
+    coverImage: "/images/mixSeries/14/Hålbå.png",
+    images: undefined,
+    soundcloudLink:
+      'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-iv-halba?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1303766548&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `Love and hate, peace and war are sung in a sequence of futuristic drones that recall an orgasmic stupor.
+
+        Alessio is not only a great producers and expert live performer: his sound research goes beyond the classic standards with which we are used to confronting ourselves with, bringing his awareness and his passion towards the sound mastery that many see, but few reach.
+
+        Here follows the tracklist :
+
+        Natalia Beylis - Handwriting Analysis
+        Dave Phillips - To Death We All Go
+        The Sooner The Better Constantine – Cosmos [Bedouin Records]
+        Puce Mary – Gaba For Medea
+        SØS Gunver Ryberg – Seadust [Sublunar Records]
+        KMRU & Aho Ssan – Rebirth [Subtext Recordings]
+        Cares - Oxidized The City [World Canvas]
+        Drew McDowall –Agalma V (feat. Kali Malone) [Dais Records]
+        Uboa – Lay Down & Rot Amphior
+        Imaginary Shelter [Glacial Movements]
+        Ronce – My Anger Has Roots [Promesses]
+        Laura Lair – Carry Me Home
+        Aseptic Stir- Pattern Ode
+        Pan Daijing - Part Four -A Deafening Hum
+        Damien Dubrovnik – Arrow 2 [Posh Isolation]
+        Pechblende – Cities & Desire [Amulet Of Tears]
+        Mats Erlandsson – Synthetic Crystal [Portals Editions]
+        Coalminer - Ashen Paradise [Basement Corner Emissions]
+        SEC_ - Love [A Flooded Need]
+        Roly Porter – An Open Door [Subtext Recordings]
+        Hålbå – La Voce Della Resistenza [Sector Audio]
+        Hålbå - Untrue Love [Glioblastoma Records] [UNRELEASED]
+
+        `,
+  },
+  {
+    id: "XIII",
+    name: "Mix Series XIII - EYES GONE",
+    artist: "EYES GONE",
+    coverImage: "/images/mixSeries/13/EYESGONE.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-xiii-eyes-gone?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1208349982&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `The 13th Mix series of AI comes from EYES GONE, who offers an hour of sound exploration outside the usual schemes and habits related to the purely techno world. Sweetness and melancholy come together in a unison of sounds and decadent rhythms, like at the end of a pleasant life experience.
+
+      A minimalist side emerges from the artist, who is able to propose his most hidden and unexpected side, which fades between esotericism and invocations to times that escape the rules of our industrial universe.`,
+  },
+  {
+    id: "XII",
+    name: "Mix Series XII - About:Kaos & Ecce",
+    artist: "About:Kaos & Ecce",
+    coverImage: "/images/mixSeries/12/kaos.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-xii-aboutkaos-ecce?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1186215526&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `12/12. @Aboutkaos & Ecce closes the first cycle of our Mix Series with a front-left set of hard hitting techno and fast forward breaks. 80 minutes of rhythm and rebellion recorded and home delivered with expertise in the last day of the year, for your self-enjoyment or collective enhancement purpose.`,
+  },
+  {
+    id: "XI",
+    name: "Mix Series XI - SUNDS",
+    artist: "SUNDS",
+    coverImage: "/images/mixSeries/11/SUNDS.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-xi-sunds?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1168878640&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `The 11th instalment of this year is mixed by our co founder @SUNDSyndrome, expert musician and polystumentist.
+
+      Dark drones and obscure texture characterise the first part of his set, builded with industrial elements and a rhythmic hammer approach, revealing the punk influences that brings him to construct his own sound.
+
+      Industrial techno shivers are the basic of this emotional mix, that sweats passion like a body inflamed by extrasensory pleasures.
+
+      Expect some good news from this boy in the next days, as he will increase our label's collection.`,
+  },
+  {
+    id: "X",
+    name: "Mix Series X - NU YORCK",
+    artist: "NU YORCK",
+    coverImage: "/images/mixSeries/10/NUYORCK.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-x-nu-yorck?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1151024935&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `Vol. X of our podcasts serie is dispatched by one third of Autonoma Industriale’s foundation. Nu Yorck behind the decks presenting an abysmal futuristic Techno set. A deep dive into telluric rumbles and manic grooves.
+Within this fine and unique selection you will also hear an unreleased forthcoming track from the label catalogue.`,
+  },
+  {
+    id: "IX",
+    name: "Mix Series IX - Nacasat + Desert Drone",
+    artist: "Nacasat + Desert Drone",
+    coverImage: "/images/mixSeries/9/Nacasat.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-ix?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1132391293&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: "Our ninth instalment in the Autonoma Industriale mix series comes from the established collaboration between one of our founding member (Desert Drone / Ex Controllata Enichem / Anxiety Pattern Generator) and a long time friend and collaborator, Nacasat. The duo regularly delivers outstanding industrial techno around Berlin, always live and improvised. A true Autonoma Industriale landmark.",
+  },
+  {
+    id: "VIII",
+    name: "Mix Series VIII - BPF",
+    artist: "BPF",
+    coverImage: "/images/mixSeries/8/BPF.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-viii-bpf?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1116524116&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: "The 8th Volume of our Mix series contains excerpts from BPF sets on Radio Banda Larga (Torino) and Atelier de l'étoile (Besançon). Recorded by using solely physical formats (CD, vinyl and tapes) which are found, given for free and/or exchanged at DIY shows.",
+  },
+  {
+    id: "VII",
+    name: "Mix Series VII - DJ Control Delete",
+    artist: "DJ Control Delete",
+    coverImage: "/images/mixSeries/7/DJControlDelete.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-vii-dj-control-delete-set-ai-190621?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1096224205&color=%23ff5500&inverse=false&auto_play=true&show_user=tr",
+    description: "Tom Schwarz is the seventh artist to participate in our Mix series, recorded live at Autonoma Industriale 190621, Extreme, intense, Control Delete wraps body and mind in one of the most beautiful and overwhelming sets played in our events. He is not just a DJ, but an expert musical explorer able to Capture musical moments within an unstable system that keeps collapsing on it self. The livesets with the Sinister Sveta project are exceptional, in a hypnotic evolution of noises and loops, sealed by ancient and disturbing voices.",
+  },
+  {
+    id: "VI",
+    name: "Mix Series VI - SAMIN SON",
+    artist: "SAMIN SON",
+    coverImage: "/images/mixSeries/6/SAMINSON.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-vi-samin-son?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1073830891&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `Skate In Paradise Justin Hugh Williams
+Presented by 93n3r4tør(11111111111)saminsonstudioeditallnona
+
+Semi-organised collage mash-up chaos gift dosage of post punk noise music concrete techno industrial, Samin Son super sonic exploration's .
+
+TRACK-ARTIST(s)-ALBUM-DATE-(GENRE/STYLE/TAGS)-LOCATION-LABEL
+These following amazing tracks were not necessarily played at their original forms although a lot of them still may sound very similar and one or two it may seem more decontrstructed
+
+We Are Meat - ハナタラシ [Hanatarash] - 1988 Electronic, Rock, Noise-Japan-Alchemy Records.(2) - ARLP-018
+A New Radiance Springing Forth From Inside The Light - Keiji Haino, Jim O’Rourke, Oren Ambarchi - Now While It's Still Warm Let Us Pour In All The Mystery = まだ　温かい内の　この今に　全ての謎を　注ぎ込んでしまおう
+- 26 Apr 2013 - Rock - Experimental - Australia - Black Truffle - BT09, Medama Records - mr04
+Resurrection River - VVV*(Vega & Vaino & Vaisanen) - May 2005 - Electronic Leftfield, Minimal, Experimental - Austria - Mego - MEGO 075
+Post-Soviet Models - Tzusing - 東方不敗
+- 28 Feb 2017 - Electronic - Techno, EBM - US - L.I.E.S. Records - LIES-092
+The Hacker - Clock DVA - Buried Dreams - 1989 - Electronic - Industrial - US - Wax Trax! Records - WAX 7094
+Fokus - Schwefelgelb - Dahinter Das Gesicht - 17 Feb 2017 - Electronic - Techno, EBM, Industrial - Germany - aufnähme + wiedergäbe
+Mad - CoH Plays Cosey* – CoH Plays Cosey - Oct 2008 - Electronic - Musique Concrète, Spoken Word, Experimental, Poetry - Germany - Raster-Noton - R-N 91
+Hamburger Lady - Throbbing Gristle - Throbbing Gristle’s Greatest Hits (Entertainment Through Pain) - Oct 1981 - Electronic - Industrial, Experimental - US - Rough Trade - ROUGH US 23
+Smile - The Fall - Perverted By Language - Dec 1983 - Rock - New Wave, Post-Punk - UK - Rough Trade - ROUGH 62
+HANATARASH YouTube live at Bears, Osaka, Japan www.youtube.com/watch?v=L7p_C9OlN40
+Hammer II - BEEATSZ v2.0999z - Cog - 7 Aug 2020 - #experimental #core #free #noise #other #turin #berlin - Brainpussyfication
+Anoda Rava - G I L T - Guillaume Lobmeyer and Thiébault Imm - recorded in July 2018 - Hardware Only / Live Set - Techno, no compromises #berlin
+Stray Dogs - Broken English Club - The English Beach - 21 Jun 2017 - Electronic - Techno, EBM, Industrial, Experimental - US - L.I.E.S. Records - LIES-094
+Bright Black - Death Qualia - Fanged Contradiction - 2020 - Electronic - Techno, Experimental, Industrial, Speedcore, Noise, Ambient
+Guest Worker - Nacasat - Chemring - 24 Dec 2020 - Electronic - Techno, Industrial - Berlin - Autonoma Industriale
+Parataxon - Osheyack - Empty Hell - 11 May 2018 - Electronic - Techno, Industrial, Experimental - China, SVBKVLT - SBKT021
+Evil Knevil - Human - Electro Boogie - Shape Generator - 29 Mar 1999 - Electronic - Breakbeat, Electro, Synth-pop - Germany - Studio !K7 - !K7075LP
+Integer / Along The Synthetic River I (Samuel Kerridge Remix) - Gooooose - Rusted Silicon - 17 May 2019 - Electronic - Industrial - China - SVBKVLT - SBKT027
+Atmosphere - Joy Division - Atmosphere - Oct 1980 - Rock - New Wave, Post-Punk - Factory - FACUS 2/UK, Factory (US) - Facus 2`,
+  },
+  {
+    id: "V",
+    name: "Mix Series V - Bianco Negativo",
+    artist: "Bianco Negativo",
+    coverImage: "/images/mixSeries/5/BiancoNegativo.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-v-bianco-negativo?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1057258132&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `A selection of unreleased, unnamed, obscure tracks ripped of old tapes from the likes of Bianco Negativo.
+Founders of Marguerite Records and Tocca il futuro, Davide and Claudio already accomplished the support of great artists like Reka, Intergalactic Gary, Alessandro Adriani, Pasiphae and many more.
+Their monthly show on Rinse France is a fixture for New Beat, Industrial, Post Punk and Synth-Pop passionates, with regular guests such as Josh Cheon, Borusiade, Robert Bergman and Violet Poison.`,
+  },
+  {
+    id: "IV",
+    name: "Mix Series IV - NEKROBOT",
+    artist: "NEKROBOT",
+    coverImage: "/images/mixSeries/4/NEKROBOT.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-iv-nekrobot?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1035799510&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `The umbral and dusky character Nekrobot takes the spot in our April Mix Series. The notorious Berlin based experimental musician and DJ from Athens, delivers a delirious and stunning harsh Podcast, a journey into a metal factory. As he describes it: An expression of disorder through sounds.
+      Proper, "according to the actual situation"
+
+      Tracklist
+      1 Iron Sight - Weekend
+      2 Damien Dubrovnik - Penis Corset
+      3 Consumer Electronics - Co-Opted
+      4 Dive - Back To Back
+      5 Tanz ohne Musik - Atrraction
+      6 group A - Circulation (Hiro Kone Remix)
+      7 Celluloïd Mata - At Bunkers
+      8 Vainio Väisänen Vega - Sick Sick USA
+      9 Ars Moriendi - Armageddon
+      10 Militia - Die Theorielosigkeit des Anarchismus
+      11 Pharmakon - Transmission
+      12 Hydrone - Disorientation Emerge
+      13 Sudden Infant - Angelic Agony`,
+  },
+  {
+    id: "III",
+    name: "Mix Series III - NUISANCE777",
+    artist: "NUISANCE777",
+    coverImage: "/images/mixSeries/3/NUISANCE777.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-vol-iii-nuisance777?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1019731885&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `A dystopic, 90 minutes excursion in the post-rave era, where the Machine gained the control, the human is persecuted and the last, abandoned factory rise as the church of a new, undisputed emperor of Techno.
+The third episode of Autonoma Industriale Mix Series comes from NUISANCE777, the Israhell/Berlin based DJ and producer part of LNS Soundterror disorganization.`,
+  },
+  {
+    id: "II",
+    name: "Mix Series II - BIONIHIL",
+    artist: "BIONIHIL",
+    coverImage: "/images/mixSeries/2/BIONIHIL.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-mix-series-bionihil?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A994349311&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `333 plays333
+View all likes19
+View all reposts3
+Autonoma Industriale
+630 followers
+630
+99 tracks
+99
+Mix of #Bionihil's unreleased home recordings: from the recordings in Chemnitz (karl-marx-stadt) in 2007 to the ones made in Valencia and in the mountains, to Berlin phase with unreleased AMOR track, flamenco collaboration with Alberto Santacruz (DIY1990, ALTAR) adding a vocal improvisation on traditional Belarusian folklore following recitation of the poem by Belarusian poet Danuta Bichel-Zahnietava. Ending with pandemic classic guitar exploration.
+
+"I wanted to give space for a presence of Belarusian language to make attention on the current political situation in Belarus where government is shooting down the peoples voices." Bionihil`,
+  },
+  {
+    id: "I",
+    name: "Mix Series I - HAUSVERBOTI",
+    artist: "HAUSVERBOTI",
+    coverImage: "/images/mixSeries/1/HAUSVERBOTI.png",
+    images: undefined,
+    soundcloudLink: 'https://soundcloud.com/autonoma-industriale/autonoma-industriale-podcast-vol-i-hausverboti?in=autonoma-industriale/sets/mix-series',
+    soundcloudEmbed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A969822115&color=%23ff5500&inverse=false&auto_play=true&show_user=true",
+    description: `First Mix Series of Autonoma Industriale, performed by @hausverboti
+
+Artwork: Cat Eliz
+
+Track list:
+
+Draag - Redrum
+Ice Cube - I’m Scared (Insert)
+Interferon - Poison Barbs (Shrouds Remix)
+ANFS - VPA
+SUNDS - Denation
+Unhuman / Petra Flurr - Had Enough
+Sawf - Menete
+NX1 - BT3
+Diagenetic Origin - Born Again
+Arnaud Rebotini & David Carretta - OM PSG
+Alessandro Adriani & Cosimo Damiano - Flashblind
+Nacasat - Torturing Test
+Ogmah - Torture
+JK Flesh - Chelmsley Wood
+I Murdered - Sins
+Reeko - Desfile Funebre De Rosas
+Vulkanski - Stalking Caracal
+JK Flesh - The Body Is Not Real
+YURA YURA - Brume
+Reeko - Cyberpunk
+Orphx - What Will Burn`,
   },
 ];
 
