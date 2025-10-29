@@ -1,102 +1,100 @@
 .mixSeriesSimpleTitle {
-    color: #e53935;
-    font-size: 2.5rem;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 2.5rem;
-    margin-top: 2.2rem;
-    line-height: 1.08;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 0.08em;
-    font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
-    text-shadow: 0 2px 18px #000a, 0 1px 0 #fff2;
-    text-transform: uppercase;
-    transition: color 0.2s;
-            text-align: center;
-
+  color: #e53935;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 2.2rem;
+  line-height: 1.08;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.08em;
+  font-family: "Montserrat", "Arial Black", Arial, sans-serif;
+  text-shadow: 0 2px 18px #000a, 0 1px 0 #fff2;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  text-align: center;
 }
 .mixSeriesSimpleSubtitle {
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #fff;
-    display: block;
-    margin-top: 0.4em;
-    letter-spacing: 0.18em;
-    text-transform: none;
-    opacity: 0.85;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+  display: block;
+  margin-top: 0.4em;
+  letter-spacing: 0.18em;
+  text-transform: none;
+  opacity: 0.85;
 }
 .mixSeriesSimpleLink {
-        color: #e53935;
-        font-size: 1.1rem;
-        font-weight: 500;
-        margin-bottom: 1.5rem;
-        margin-top: 0;
-        cursor: pointer;
-        transition: color 0.2s;
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
-        padding: 0.7em 0.5em;
-        border-radius: 6px;
+  border-bottom: 1px solid #e53935;
+  color: #e53935;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  padding: 0.7em 0.5em;
+  /* border-radius: 6px; */
 }
 .mixSeriesSimpleLink:hover {
-        color: #fff;
-        background: #e53935;
+  color: #fff;
+  background: #e53935;
 }
 
 @media (max-width: 800px) {
-    .mixSeriesSimpleTitle {
-        font-size: 1.35rem;
-        margin-top: 1.1rem;
-        margin-bottom: 1.2rem;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        text-align: center;
-    }
-    .mixSeriesSimpleSubtitle {
-        font-size: 1.05rem;
-        margin-top: 0.25em;
-    }
-    .mixSeriesSimpleLink {
-        font-size: 1rem;
-        margin-left: 0.7rem;
-        margin-right: 0.7rem;
-        padding: 0.6em 0.3em;
-    }
+  .mixSeriesSimpleTitle {
+    font-size: 1.35rem;
+    margin-top: 1.1rem;
+    margin-bottom: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+  .mixSeriesSimpleSubtitle {
+    font-size: 1.05rem;
+    margin-top: 0.25em;
+  }
+  .mixSeriesSimpleLink {
+    font-size: 1rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    padding: 0.6em 0.3em;
+  }
 }
-
 
 .mixSeriesSimpleTitle {
-    color: #e53935;
-    font-size: 2.2rem;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 2.5rem;
-    margin-top: 2rem;
-    line-height: 1.1;
-            text-align: center;
-
+  color: #e53935;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
+  line-height: 1.1;
+  text-align: center;
 }
 .mixSeriesSimpleSubtitle {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #e53935;
-    display: block;
-    margin-top: 0.2em;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #e53935;
+  display: block;
+  margin-top: 0.2em;
 }
 .mixSeriesSimpleLink {
-    color: #e53935;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-    margin-top: 0;
-    cursor: pointer;
-    transition: color 0.2s;
+  color: #e53935;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 .mixSeriesSimpleLink:hover {
-    color: #fff;
+  color: #fff;
 }
