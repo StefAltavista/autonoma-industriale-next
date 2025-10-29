@@ -65,28 +65,21 @@
 }
 
 .backToMixesBtn {
-  margin: 2.5rem auto 0 auto;
-  display: block;
-  padding: 1.2em 3em;
-  background: linear-gradient(90deg, #ff5500 0%, #222 100%);
-  color: #fff;
+  color: #930000;
   font-weight: bold;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 2.5em;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
+  font-size: 1rem;
   text-decoration: none;
-  letter-spacing: 0.06em;
-  transition: background 0.2s, color 0.2s, transform 0.1s;
+  letter-spacing: 0.1em;
+  transition: 0.2s;
   cursor: pointer;
-  text-align: center;
-  width: 80%;
-  max-width: 500px;
+  text-align: right;
+  width: 70%;
+  padding: 4px;
+  border-top: 1px solid #930000;
 }
 .backToMixesBtn:hover {
-  background: linear-gradient(90deg, #222 0%, #ff5500 100%);
-  color: #ff5500;
-  transform: translateY(-3px) scale(1.06);
+  /* background: #930000 100%; */
+  color: #ffffff;
 }
 .backToMixesBtn-mobile {
   display: none;
@@ -100,7 +93,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
-  width: 90vw;
+  width: 90%;
   position: relative;
   z-index: 0;
 }
@@ -153,8 +146,7 @@
 }
 .mixTextContent h2 {
   margin: 0;
-  padding-bottom: 1rem;
-  color: "white" !important;
+  color: #ab0000;
 }
 .soundcloudPlayer {
   flex: 1 1 0;
@@ -173,20 +165,12 @@
 
 /* --- MOBILE STYLES --- */
 @media (max-width: 800px) {
-  /* body,
-  html {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden !important;
-    overscroll-behavior: none;
-  } */
+  .mixTextContent h2 {
+    color: #ffffff;
+  }
   #mixPage {
-    height: 100vh !important;
-    min-height: 100vh !important;
-    width: 100vw;
-    padding: 0 !important;
     overflow: hidden !important;
+    text-align: justify;
   }
   .rowContainer {
     flex-direction: column;
@@ -201,19 +185,11 @@
   }
   .mixCoverImage-mobile {
     display: block !important;
-    width: 90vw;
-    max-width: 90vw;
-    min-width: 0;
+    width: 70% !important;
     margin: 1.5rem auto 0 auto;
   }
   .mixCoverImage-desktop {
     display: none !important;
-  }
-  .leftColumn {
-    width: 100vw;
-    max-width: 100vw;
-    min-width: 0;
-    gap: 1.2rem;
   }
   .mixCoverImage {
     width: 95vw;
@@ -221,15 +197,9 @@
     min-width: 0;
   }
   .mixTextContent {
-    /* position: fixed; */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    max-width: 100vw;
+    width: 85%;
     min-width: 0;
-    margin-top: 0 !important;
+    margin-top: 1rem !important;
     border-radius: 0;
     background: rgba(0, 0, 0, 0.35);
     box-sizing: border-box;
@@ -245,12 +215,10 @@
   }
   .backToMixesBtn-mobile {
     display: block;
-    margin: 2.5rem auto 1.5rem auto;
-    width: 95vw;
-    max-width: 98vw;
+    border: none !important;
+    width: 100%;
     font-size: 1.1rem;
-    padding: 1em 0;
-    text-align: center;
+    text-align: right;
   }
   .backToMixesBtn-desktop {
     display: none;
