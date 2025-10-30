@@ -36,6 +36,12 @@ export default function RootLayout({
           <Header />
           <div id="pagebody">{children}</div>
         </GlobalProvider>
+        {/* Website tracking stuff */}
+        <script
+          data-goatcounter="https://autonomaindustriale.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
       </body>
     </html>
   );
