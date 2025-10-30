@@ -25,7 +25,7 @@ const mixSeriesData: MixSeriesDataType[] = [
     name: "Mix Series XX [dia/log] - Cocktail Twinks & HIGH",
     artist: "Cocktail Twinks",
     date: "30th October 2025",
-    artwork: "Bece",
+    artwork: "'No Hard Feelings' by Bece",
     coverImage: "/images/mixSeries/20/cocktail_coverImage.jpg",
     images: undefined,
     soundcloudLink:
@@ -105,7 +105,7 @@ Tracklist
     name: "Mix Series XIX [dia/log] - Pris V & Jinx",
     artist: "Pris V",
     date: "17th September 2025",
-    artwork: "Bece",
+    artwork: "'No Hard Feelings' by Bece",
     coverImage: "/images/mixSeries/19/prisV_coverImage.jpg",
     images: undefined,
     soundcloudLink:
@@ -166,7 +166,7 @@ Listen to her very personal mix of oddities and curved grooves and read more abo
     artist: "expediitn",
     artistLink: "linktr.ee/expediitn",
     date: "13th August 2025",
-    artwork: "Bece",
+    artwork: "'No Hard Feelings' by Bece",
     coverImage: "/images/mixSeries/18/expediitn_coverImage.jpg",
     images: undefined,
     soundcloudLink:
