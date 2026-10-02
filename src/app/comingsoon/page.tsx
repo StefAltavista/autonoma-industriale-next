@@ -7,7 +7,8 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import MuteButton from "@/components/MuteButton";
 import Subscribe from "@/components/Subscribe";
 import logoAutonoma from "@/../public/images/logoAutonoma.png";
-import artists7june from "./artist7june25";
+
+import artists7june from "./artist4october25";
 
 export default function ComingSoon() {
   const artists = artists7june;
@@ -25,7 +26,7 @@ export default function ComingSoon() {
   return (
     <div>
       {!enter ? (
-        <div id="comingsoon-intro" onClick={() => enterPage()}>
+        <div id="comingsoon-intro">
           <Image
             src={logoAutonoma}
             width={100}
@@ -33,61 +34,55 @@ export default function ComingSoon() {
             alt="logoAutonoma"
             priority={true}
           />
-          <h1>E N T E R</h1>
+          <h1>23rd October 2026</h1>
+          <div
+            className="comingsoonTextSection links"
+            id="subscribe_link"
+            style={{ fontSize: "30px", textAlign: "center" }}
+          >
+            <p style={{ fontSize: "30px", textAlign: "center" }}>
+              Join the mailing list, or the{" "}
+              <Link href="https://t.me/autonomaindustriale" target="blank">
+                Telegram
+              </Link>{" "}
+              channel
+              <br></br>for more info regarding our next event
+            </p>
+            <Subscribe />
+          </div>
         </div>
       ) : null}
       <div className={enter ? "open" : "close"}>
         <MuteButton videoRef={videoRef} visible={enter} />
 
         <video className="video" loop ref={videoRef} playsInline preload="auto">
-          <source src="/videos/Teaser7June25.mp4" type="video/mp4" />
+          <source src="/videos/teaser4thOctober.mov" type="video/mp4" />
         </video>
 
         <div id="comingsoon">
-          <div className="top_image top_image_fixed">
-            <Image
-              src={imgBaseUrl + "borderText.png"}
-              width={1200}
-              height={1200}
-              alt="autonomaindustriale"
-            />
-          </div>
-
-          {enter && (
-            <div className="top_image to_top ">
-              <Image
-                src={imgBaseUrl + "hangedMan.png"}
-                width={1000}
-                height={800}
-                alt="autonomaindustriale"
-              />{" "}
-            </div>
-          )}
+          {enter && <div className="space_full_window_h"></div>}
 
           <div className="comingsoonTextSection comingsoonInfo "></div>
 
           <div className="comingsoonTextSection description ">
-            <p className="slow_flash glitch" data-glitch="glitch">
-              The nothingness of being is not a void, but the unsettling force
-              which displaces and disrupts. We are the void made manifest, not
-              in the form of absence, but as the presence of what does not
-              belong, the tension between what is and what is not
+            <p className="slow_flash shake" data-glitch="glitch">
+              Back in our beloved Kreuzberg basement on the 4th of October to
+              welcome the cold dark times and close the year where we started
+              it. This time with a four acts powerhouse concert, followed by a
+              double dose of club action.
             </p>
           </div>
           <div className="comingsoonTextSection comingsoonInfo flash">
             <p>
-              SATURDAY 7TH OF JUNE 2025<br></br>
+              SATURDAY 4TH OF OCTOBER 2025<br></br>
               <br></br>
-              SCREENING PROGRAM FROM 20:00{" "}
-              <i style={{ fontSize: "18px" }}>free entry</i>
+              Bethaniendamm 666, 10179 Berlin
               <br></br>
-              <br></br>
-              CONCERT STARTS AT 21:00<br></br>UNTILL VERY LATE<br></br>
+              <br></br> DOORS OPEN AT 21:00
             </p>
-            <h3>Køpi</h3>
           </div>
           <div className="comingsoonTextSection artists">
-            <h1>L I N E U P</h1>
+            <h1 className="slow_flash">L I N E U P</h1>
 
             {artists.map((x, idx) => {
               return (
@@ -105,12 +100,13 @@ export default function ComingSoon() {
                     ></Image>
                   ) : null}
                   <p></p>
+                  {x.description && <h2 className="">{x.description}</h2>}
+
                   {x.link && (
                     <Link href={x.link ? x.link : "/comingsoon"} target="blank">
-                      LINK
+                      <h2 className="slow_flash">LINK</h2>
                     </Link>
                   )}
-                  {x.description && <p>{x.description}</p>}
                 </div>
               );
             })}
@@ -139,7 +135,7 @@ export default function ComingSoon() {
             className="comingsoonTextSection disclaimer"
             style={{ fontSize: "20px", lineHeight: "30px" }}
           >
-            <p>
+            {/* <p>
               Proceeds for Resistance<br></br>All the proceeds after artists
               contribution and technical costs will go to benefit. Supporting
               the scene has always been a core principle of our philosophy. PfR
@@ -154,7 +150,7 @@ export default function ComingSoon() {
               assistance to all those facing repression for advocating for
               Palestine across Europe including the UK.
             </p>
-            <br></br>
+            <br></br> */}
 
             <p>
               Autonoma Industriale aims to create safer and more inclusive
