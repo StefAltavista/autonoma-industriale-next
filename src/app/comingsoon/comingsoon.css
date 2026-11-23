@@ -1,4 +1,4 @@
-#comingsoon-intro {
+/* #comingsoon-intro {
   width: 100vw;
   height: 100vh;
   background-color: black;
@@ -8,6 +8,19 @@
   align-items: center;
   color: rgb(255, 0, 0);
   cursor: pointer;
+} */
+
+#comingsoon-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  min-height: 100vh;
+  height: auto;
+
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #comingsoon-intro h1 {

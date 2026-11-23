@@ -7,7 +7,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import MuteButton from "@/components/MuteButton";
 import Subscribe from "@/components/Subscribe";
 import logoAutonoma from "@/../public/images/logoAutonoma.png";
-
+import poster5December from "@/../public/images/comingsoon/AI051226.png";
 import artists7june from "./artist4october25";
 
 export default function ComingSoon() {
@@ -30,11 +30,25 @@ export default function ComingSoon() {
           <Image
             src={logoAutonoma}
             width={100}
-            height={90}
+            height={80}
             alt="logoAutonoma"
             priority={true}
           />
-          <h1>23rd October 2026</h1>
+          <h1>5th December 2026</h1>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Image
+              src={poster5December}
+              alt="Autonoma 5th December poster"
+              priority
+              style={{
+                width: "auto",
+                height: "auto",
+                maxHeight: "40vh",
+                maxWidth: "100%",
+                objectFit: "contain",
+              }}
+            />
+          </div>
           <div
             className="comingsoonTextSection links"
             id="subscribe_link"
